@@ -22,11 +22,11 @@ Development of the **FinGPT** financial AI assistant and an **INNOMA** product, 
 
 [![Autodiary: personal evidence informs the next decision](../assets/autodiary.svg)](../projects/autodiary/en/README.md)
 
-An evolving personal AI platform that connects what I track, what I learn, and what I have already tried. A trip can inform future planning and help contextualize changes in sleep or training; books become practice, and research leads to publication and feedback.
+A personal AI platform for learning and decisions: an interactive knowledge library and trainers, a standalone English practice application, travel planning, personal consultations, news briefs, and research. These capabilities use accumulated context and feedback; life-metric analytics is one component.
 
-**Engineering focus:** module-owned data, versioned metrics, stable APIs/MCP, evidence provenance, and long-term context.
+**Engineering focus:** independent modules, relevant context through APIs/MCP and catalogs, traceable sources, interactive artifacts, and continuity across tasks.
 
-[Read the case](../projects/autodiary/en/README.md) · [Explore the example, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html)
+[Read the case](../projects/autodiary/en/README.md) · [Explore an analytics example, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html)
 
 ### AI Software Factory
 **Automating the Development Lifecycle · in use and evolving**

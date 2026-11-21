@@ -1,36 +1,46 @@
 [Русская версия](../docs/vision.md)
 
-# Product vision
+# Vision for a personal AI platform
 
-[Home](README.md) · [Analytics core methodology](methodology.md)
+[Autodiary case](README.md) · [Analytics core methodology](methodology.md)
 
-Autodiary helps put personal data, knowledge and past experience to use in subsequent decisions. It started with connections between health, sleep, activity, mood, productivity and a diary. Related learning, travel and research workflows grew around that analytics core.
+Autodiary helps turn scattered personal data, reading, discussions, and previous experience into a useful next step: understanding a situation, practising an idea, making a plan, or preparing a question. Development follows the owner’s actual tasks.
 
-## What connects the parts
+## Independent capabilities
 
-The system accumulates useful context: what happened, what the owner tried, what worked and what was declined. A relevant observation can inform another task. Trip history supports the next itinerary while also explaining the context of a monthly review; an idea from a book becomes an exercise, and feedback helps continue the practice.
+Analytics handles observations, metrics, and reviews of change. The library makes knowledge and source material reusable. Trainers and English learning support application and retain evidence of attempts. Travel and equipment support planning and accumulated experience. Personal consultations address a question in the context of its history. News briefs and research support information focus, deeper investigation, and publication.
 
-Each module retains its own task and ownership of its data. Stable interfaces make relevant evidence available across modules. The user receives an appropriate result: a report, plan, interactive lesson or research material.
+These capabilities have different data and deliverables. English Practice has its own local application; an interactive book or trainer opens as a standalone page; a training programme produces usable cards; a period review produces a report and visualizations. The analytics core retains its role within this broader system.
 
-## Main scenarios
+## How a task gains continuity
 
-- **Personal analytics:** notice meaningful changes and connect observations from several areas of life.
-- **Everyday decisions:** explore questions about load, health or habits in the context of personal history and constraints.
-- **Travel:** prepare new plans informed by family preferences and experience from earlier trips.
-- **Knowledge and learning:** turn books, documents and public videos into materials and exercises for understanding and practice.
-- **English:** continue speaking and writing practice with continuity between lessons and review.
-- **Research and information focus:** develop selected questions and identify useful news with feedback from the owner.
+1. **Recover relevant context:** available sources, previous discussions, accepted constraints, and preferences.
+2. **Prepare a useful result:** an answer, analysis, plan, lesson, cards, or publication.
+3. **Check its basis:** connect findings to sources and use appropriate content and structural checks.
+4. **Return to application:** retain the actual attempt, impression, or decision so a subsequent task can use the new experience.
 
-## Development principles
+This is a shared design principle; the actions and evidence depend on the task. A trip requires an account of what happened, a lesson requires learner responses, a recommendation requires feedback, and research requires sources and editorial review.
 
-1. **Decision value first.** The number of metrics and workflows does not by itself determine usefulness.
-2. **Verifiable evidence.** A finding should leave its basis and uncertainty open to inspection.
-3. **Continuity of experience.** The next step considers what has already been accepted, tried or declined.
-4. **Stable module boundaries.** Changes in one area preserve clear contracts for the others.
-5. **Owner control.** Personal data and consequential decisions remain under the owner’s control.
+## Connections that create value
 
-## Current status
+**Knowledge into action.** A book or video becomes reusable library material; an idea can be practised in a trainer and later inform a personal question. Source references preserve its basis, while evidence from applying it is evaluated separately.
 
-As of November 2026, this is a working system for one owner, with an analytics core, specialized AI workflows and individual user-facing tools. It is not offered as a finished public service. A broader product remains a possible direction rather than a claimed outcome.
+**Travel into personal history.** Previous impressions and equipment experience inform planning. Actual trip outcomes inform both future plans and the interpretation of sleep or activity changes.
 
-The [historical March 2026 presentation](../presentation/autodiary_product.pdf) shows an early analytics-focused version. The [main page](README.md) describes the current scope.
+**An attempt into the next lesson.** Vocabulary, written answers, and speaking practice help select subsequent exercises. Progress is connected to actual attempts, not simply to viewing an explanation.
+
+**A question into research and feedback.** A personal observation can lead to a researched publication. Reactions and comments help refine future topics. Separately, a news brief helps identify external changes worth investigating.
+
+## Engineering principles
+
+- Independent modules own their data and artifacts; shared contracts make relevant context available.
+- AI judgment and software validation serve different purposes. Plausible prose, valid structure, and a supported fact need different evidence.
+- Observations, published ideas, hypotheses, and outcomes retain their distinct meaning.
+- Earlier decisions and constraints inform subsequent tasks.
+- A new capability should produce a concrete result and support continuity of experience.
+
+## Status
+
+A working and evolving system for personal use. Specialized workflows run for user tasks and within defined processes. Modules can evolve independently. No measured improvement in health, learning, or productivity is claimed.
+
+The [March 2026 presentation](../presentation/autodiary_product.pdf) concerns an early analytics component. The [Autodiary case](README.md) presents the platform’s current scope.

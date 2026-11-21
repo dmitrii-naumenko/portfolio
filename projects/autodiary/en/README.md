@@ -2,75 +2,89 @@
 
 # Autodiary — A Personal AI Platform for Learning and Decision-Making
 
-I built Autodiary to put my own experience to use. It began as a way to make sense of personal health and activity data. Today it connects what I track, what I learn, and what I’ve already tried, so that a useful observation in one part of my life can inform a decision somewhere else.
+I am developing Autodiary to put my data, knowledge, and accumulated experience to use in everyday tasks. It helps me understand what is happening, learn a topic, plan an action, and return to the outcome later. It connects a knowledge library and practice trainers, English learning, travel and equipment, personal consultations, research, and analytics.
 
-A family trip shows how the pieces fit together. When I plan the next one, Autodiary draws on past itineraries, what each person enjoyed, and what we’d change. That same trip gives a monthly review context for a shift in sleep or training. The platform also turns books into interactive exercises, builds English practice around earlier lessons, and takes a question from my journal through research, editing, and publication.
+The project began with health and activity data. Today the analytics core is one of several independent components. Other modules own their data, tools, and user-facing artifacts, from an interactive lesson to a travel plan or training programme.
 
-The central engineering decision was to give each module ownership of its data and make the relevant evidence accessible across modules. A Python and PostgreSQL analytics core tracks 200+ versioned metrics. Specialized agents use stable APIs, Model Context Protocol (MCP) tools, and searchable catalogs to retrieve the context each task needs. They can trace findings back to their sources, revisit earlier conclusions when new evidence appears, and carry my feedback into the next recommendation.
+**In use and evolving.** [Author’s portfolio](https://github.com/dmitrii-naumenko/portfolio/tree/main/en) · [How the modules connect](vision.md) · [An analytics example, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html)
 
-**[Explore a demonstration](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html)** · **[Author’s portfolio](https://github.com/dmitrii-naumenko/portfolio/tree/main/en)** · **[Analytics core methodology](methodology.md)**
+![Autodiary: personal context, knowledge, practice, and decisions](../../../assets/autodiary.svg)
 
-![Autodiary activity dashboard](../assets/dashboard_activity.png)
+## What the platform delivers
 
-*An earlier view of the analytics core. Public images below show selected components, not current personal data.*
-
-## What the system delivers
-
-| Task | Result |
+| Task | Concrete result |
 |---|---|
-| Understand a change in wellbeing or training load | A connected view of sleep, activity, training and diary observations, with supporting sources and limits |
-| Plan another trip | An itinerary informed by the family’s preferences and lessons from previous trips |
-| Apply what I read | Interactive learning materials and exercises that connect an idea to practice |
-| Continue English practice | Sessions that build on earlier lessons and material to revisit |
-| Develop a personal observation | Research and publication followed by feedback that informs the next step |
+| **Understand and apply a book, document, or video** | Interactive material with an idea map and source references; a separate trainer with situational cases, explanations, and exercises for real-life application |
+| **Continue learning English** | A local application with learning maps, interactive lessons, vocabulary, audio, and spaced review. An AI coach connects speaking and writing practice with lesson history and recurring difficulties |
+| **Plan a family trip** | An itinerary with alternatives for weather and physical load, preparation, equipment, and a mobile-friendly HTML version. Future plans incorporate participants’ impressions and lessons from previous trips |
+| **Explore health, training, or nutrition questions** | A source-linked medical history and questions for a clinician, a checkup plan, a food review from photos and labels, or the next workout and updated programme cards, informed by available evidence and personal context |
+| **Continue a personal or professional question** | Context carried from earlier discussions through their actual outcome and next steps, with previous corrections and decisions available when returning to the topic |
+| **Choose something that fits my preferences** | A film, book, equipment choice, or shared activity informed by earlier decisions, preferences, and new feedback |
+| **Make sense of a week or month** | A connected review of sleep, activity, workouts, diary entries, and events, with meaningful changes, limits, and next steps that can be checked |
+| **Maintain information focus** | A personal brief of significant AI and developer-tool news, with explanations of relevance, deeper follow-up on selected topics, and feedback informing subsequent briefs |
+| **Develop a personal question into research** | A researched, edited, and checked article with an illustration and Telegram publication; reactions and comments inform the next direction |
 
-## Engineering choices
+## Why these are parts of one platform
+
+**Knowledge continues into practice.** A book or public video becomes material that is easy to revisit. Its ideas can be practised in a trainer. Later, a relevant idea from the library can inform a new personal question, with a route back to the source. An author’s idea remains distinct from evidence of its effect in my life.
+
+**A trip informs the next decision.** Planning draws on previous itineraries, family preferences, and equipment experience. After returning, the system retains what actually happened and what people enjoyed. This supports both the next trip and the interpretation of sleep or activity changes in a monthly review.
+
+**Learning continues between sessions.** An encountered word becomes vocabulary and review material. Writing attempts and speaking practice provide evidence for feedback; a recurring difficulty can inform a new exercise. A correction made with hints remains distinct from independent use in a new situation.
+
+The common thread is accumulated context: sources, personal history, earlier attempts, decisions, and feedback. Results take the form that fits the task: an answer, report, plan, interactive lesson, PDF card, or publication.
+
+## My engineering contribution
+
+I designed and continue to develop a system of connected modules with clear responsibilities.
 
 ```mermaid
 flowchart TD
-    Sources["Personal observations: sleep, activity, diary"] --> Core["Analytics core: collection, metrics, PostgreSQL"]
-    Core --> Access["Stable APIs and MCP"]
-    Knowledge["Knowledge and accumulated experience"] --> Tasks["Specialized AI workflows"]
-    Access --> Tasks
-    Tasks --> Result["Review, plan, exercise or research"]
-    Result --> Feedback["Decision and feedback"]
-    Feedback --> Tasks
+    Question["User question or task"] --> Workflows["Specialized AI workflows"]
+    Analytics["Analytics: observations, metrics, events"] --> Workflows
+    Knowledge["Knowledge: library and sources"] --> Workflows
+    Learning["Learning: lessons, practice, progress"] --> Workflows
+    Travel["Travel and equipment: plans and experience"] --> Workflows
+    History["Personal histories, decisions, preferences"] --> Workflows
+    Workflows --> Result["Answer, report, plan, trainer, publication"]
+    Result --> Feedback["Application and feedback"]
+    Feedback --> History
 ```
 
-- **Reproducible calculations.** Values carry a methodology version and calculation status. Changes make outdated results detectable and historical recalculation possible.
-- **Stable access contracts.** Analytics, AI tools and Grafana consume defined interfaces. MCP separates the tool contract from the choice of model.
-- **Traceable findings.** Conclusions can be connected to observations and revisited when new evidence appears.
-- **Continuity.** Recommendations take earlier attempts, constraints and the owner’s feedback into account.
+- **Module-owned data.** Analytics, the library, travel, and English learning have their own lifecycles. Stable APIs, MCP tools, and catalogs make relevant context accessible across tasks. English Practice runs independently of the metrics core and its database.
+- **Explicit roles for AI and code.** AI supports research, explanation, and authoring; calculations, structural checks, assembly, and persistence rely on software tools. Prepared interactive materials and trainers can work offline without a model.
+- **Traceable results.** Findings connect to observations or records, ideas to sources, and learning evidence to actual attempts. New evidence can prompt a return to an earlier conclusion.
+- **Continuity and feedback.** The system distinguishes a proposal, acceptance, application, and rejection. Subsequent tasks use relevant experience while preserving each domain’s own meaning.
 
-**Core stack:** Python · PostgreSQL + pgvector · FastAPI · Pydantic · Alembic · FastMCP · Docker Compose · Grafana. Development and AI workflows use Claude Code and Codex.
+**Technical foundation:** Python · PostgreSQL + pgvector · SQLite · FastAPI · MCP · standalone HTML/CSS/JS artifacts · Docker Compose · Grafana. Development and AI workflows use Codex and Claude Code.
 
-## Verification and limits
+The analytics core calculates **200+ versioned metrics**. Its rules for data quality, periods, and recalculation are described in the [analytics core methodology](methodology.md).
 
-Calculation checks, data quality and analytical reasoning address different questions. An incomplete period differs from a complete one; a missing observation differs from zero; a hypothesis differs from an established fact. Ideas from books support interpretation and practice, but do not replace personal evidence or establish causality.
+## Public materials
 
-This is an individual system used for personal analytics, learning and planning. No measured improvement in health, productivity or learning is claimed here. Health discussions do not replace medical care.
+- [From an observation to a decision](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html): an interactive illustration of **one analytics workflow**, using synthetic data. Interface in Russian.
+- [Platform vision and connections](vision.md).
+- [Analytics core methodology](methodology.md).
 
-## Selected materials
+<details>
+<summary>Historical component images and presentation</summary>
 
-| Analytics and accumulated findings | Asking a question through MCP |
+![Early activity dashboard](../assets/dashboard_activity.png)
+
+| Analytics and accumulated findings | A question through MCP |
 |:--:|:--:|
-| ![Insights dashboard](../assets/dashboard_insights.png) | ![Ad-hoc question in Claude Desktop](../assets/demo_adhoc.png) |
+| ![Insights dashboard](../assets/dashboard_insights.png) | ![Ad-hoc question](../assets/demo_adhoc.png) |
 
 | Example MCP connection | Interactive knowledge: UI concept |
 |:--:|:--:|
-| ![MCP configuration example](../assets/mcp_config.png) | ![A concept for moving from knowledge to practice](../assets/demo_knowledge.png) |
+| ![MCP configuration](../assets/mcp_config.png) | ![Knowledge and practice concept](../assets/demo_knowledge.png) |
 
-*Screenshots come from earlier versions. The interactive knowledge image is a synthetic UI concept, not a screenshot of the current application.*
+Images show earlier versions of individual components. The interactive knowledge image is a synthetic UI concept. The [March 2026 presentation (PDF, Russian)](../presentation/autodiary_product.pdf) shows an early analytics-focused version.
 
-- [Demonstration: from an observation to a decision](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html), using illustrative data. The demonstration interface is in Russian.
-- [Product vision](vision.md).
-- [Analytics core methodology](methodology.md).
-- [Product presentation, March 2026 (PDF, Russian)](../presentation/autodiary_product.pdf), a historical view of the analytics core rather than a description of the full current product.
+</details>
 
-## Status
+## Current status
 
-Autodiary is a working personal system that continues to evolve. This showcase reflects **November 2026**. Analytics, knowledge, travel, English practice and research are used parts of that system; it is not a public multi-user service.
-
-This case is part of the [author’s portfolio](https://github.com/dmitrii-naumenko/portfolio/tree/main/en), bringing together the description, selected images and a demonstration. The example uses illustrative data; internal implementation details of newer workflows are not published here.
+Autodiary is an evolving personal system used through an AI assistant, specialized workflows, and individual local tools. Results are retained and reused in subsequent tasks. It is an individual project for my own use rather than a claimed finished mass-market service. No measured improvement in health or learning is claimed; medical context supports preparation for a clinician’s consultation.
 
 **Dmitrii Naumenko** · [LinkedIn](https://www.linkedin.com/in/naumenko-d/) · [Telegram](https://t.me/naumenko_ds) · [Email](mailto:dima-post2009@yandex.com)
