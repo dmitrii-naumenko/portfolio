@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ed">
+  <meta name="description" content="Самостоятельный интерактивный урок по обыкновенным дробям: от равных частей до вычислений, с наглядными моделями, подсказками и задачами на догадку.">
+  <title>Дроби — лаборатория частей</title>
+  <style>
+    :root{color-scheme:light;--paper:#f5f3ed;--surface:#fffefa;--ink:#202c32;--muted:#5e6d71;--accent:#167b70;--accent-dark:#105d55;--accent-soft:#e4f2e9;--warm:#dcab51;--warm-soft:#fff1d1;--line:#d8dfd7;--error:#943f32;--error-soft:#fcebe5;--radius:22px;--shadow:0 5px 22px #23342c06;font-family:Inter,"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.6}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink)}button,input,select{font:inherit}button{color:inherit;cursor:pointer}button:disabled{cursor:default;opacity:.56}button,input,select,summary,a{touch-action:manipulation}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}a{color:var(--accent-dark)}h1,h2,h3,p{margin:0}h1{font-size:clamp(2rem,4.1vw,3.4rem);line-height:1.12;letter-spacing:-.045em;font-weight:750;max-width:790px}h2{font-size:1.35rem;line-height:1.35;letter-spacing:-.025em}h3{font-size:1.04rem;line-height:1.4}p+p{margin-top:.7em}strong{font-weight:700}small,.small{font-size:.85rem}.muted{color:var(--muted)}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}.skip-link{position:fixed;top:-70px;left:16px;z-index:100;background:var(--ink);color:#fff;padding:10px 20px;border-radius:10px}.skip-link:focus{top:10px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:88px;max-width:1420px;margin:0 auto;padding:20px 48px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:13px}.brand-mark{width:41px;height:41px;border-radius:11px;display:grid;grid-template-columns:1fr 1fr;gap:3px;padding:7px;background:var(--accent-soft);transform:rotate(-8deg)}.brand-mark span{border-radius:3px;background:var(--accent)}.brand-mark span:last-child{background:#bdd6ca}.brand-name{font-size:1.5rem;font-weight:780;line-height:1.05;letter-spacing:-.04em}.brand-caption{font-size:.76rem;letter-spacing:.055em;color:var(--muted);margin-top:4px}.header-actions{display:flex;align-items:center;gap:20px}.offline-mark{display:flex;gap:8px;align-items:center;font-size:.78rem;color:var(--muted)}.offline-mark::before{content:"";display:block;width:7px;height:7px;border-radius:50%;background:var(--accent)}.text-button{background:transparent;border:0;font-size:.84rem;padding:9px 0;text-decoration:underline;text-decoration-color:#acb8b0;text-underline-offset:5px}.text-button:hover{color:var(--accent-dark)}
+    .shell{display:grid;grid-template-columns:224px minmax(0,1fr);gap:48px;max-width:1270px;padding:36px 38px 50px;margin:auto}.sidebar{min-width:0}.sidebar-inner{position:sticky;top:28px}.eyebrow{font-size:.69rem;text-transform:uppercase;letter-spacing:.13em;font-weight:700;color:var(--muted)}.route-progress{margin:10px 0 25px}.progress-caption{display:flex;align-items:center;justify-content:space-between;font-size:.8rem;margin-bottom:9px}.progress-track{height:5px;border-radius:8px;background:#e0e5de;overflow:hidden}.progress-fill{width:0;height:100%;background:var(--accent);transition:width .35s ease}.chapter-nav{display:grid;gap:5px}.nav-item{display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:1px solid transparent;background:transparent;border-radius:13px;min-height:57px;padding:11px 10px;line-height:1.25;font-size:.9rem}.nav-item:hover{background:#ecede5}.nav-item.is-current{background:var(--surface);border-color:var(--line);box-shadow:var(--shadow)}.nav-item.is-current .nav-number{background:var(--accent);color:#fff}.nav-number{font-size:.76rem;display:grid;place-items:center;flex:0 0 28px;height:28px;border-radius:9px;background:#e8ebe2;color:var(--muted);font-weight:650}.nav-copy{flex:1}.nav-copy small{display:block;font-size:.69rem;color:var(--muted);margin-top:4px}.nav-check{font-size:.82rem;font-weight:bold;color:var(--accent);padding-left:1px}.nav-divider{height:1px;background:var(--line);margin:11px 8px}.sidebar-note{margin:25px 8px 0;padding-top:17px;border-top:1px solid var(--line);font-size:.79rem;color:var(--muted);line-height:1.6}.sidebar-note strong{color:var(--ink)}.sidebar-bottom{padding:20px 8px 0}.sidebar-bottom .text-button{font-size:.77rem}
+    main{min-width:0}.lesson-top{margin:2px 0 25px}.lesson-topline{display:flex;align-items:center;gap:12px;margin-bottom:15px}.step-label{font-size:.72rem;font-weight:700;letter-spacing:.1em;color:var(--accent-dark);text-transform:uppercase}.pill{display:inline-flex;align-items:center;gap:5px;font-size:.71rem;font-weight:650;line-height:1.5;padding:4px 10px;border-radius:7px;background:var(--warm-soft);color:#805620}.lesson-lead{max-width:700px;margin-top:16px;font-size:1.07rem;color:var(--muted);line-height:1.7}.lesson-core{font-size:.98rem;max-width:740px;margin-bottom:25px;line-height:1.8}.lesson-core .fraction{font-size:1.05em}.lesson-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:28px;box-shadow:var(--shadow)}.model-card{position:relative;overflow:hidden}.card-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:23px}.card-heading .eyebrow{color:var(--accent-dark);margin-bottom:7px}.card-heading p{font-size:.87rem;color:var(--muted);margin-top:7px;max-width:570px}.model-icon{flex-shrink:0;width:38px;height:38px;border-radius:12px;background:var(--accent-soft);display:grid;place-items:center;font-size:1.15rem;color:var(--accent-dark)}.insight{display:flex;gap:13px;margin-top:23px;font-size:.91rem;padding:19px 21px;border-radius:15px;background:var(--accent-soft);line-height:1.7}.insight-marker{font-size:.82rem;flex:0 0 23px;height:23px;border-radius:7px;background:#c9e3d3;display:grid;place-items:center;color:var(--accent-dark);font-weight:700;margin-top:2px}.insight strong{color:var(--accent-dark)}.theory{border-bottom:1px solid var(--line);margin:20px 0 29px;padding-bottom:16px}.theory summary{cursor:pointer;font-size:.9rem;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:15px;padding:6px 2px}.theory summary::after{content:"+";font-size:1.3rem;color:var(--muted)}.theory[open] summary::after{content:"−"}.theory-content{font-size:.92rem;color:var(--muted);padding:16px 2px 4px;line-height:1.8}.theory-content strong{color:var(--ink)}.theory-content .equation{color:var(--ink);margin:12px 0}.theory-content ul{padding-left:22px;margin:12px 0}.definition-row{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}.definition-row>div{flex:1 1 190px;background:#f4f5ee;border-radius:12px;padding:13px 15px}.definition-row small{display:block;margin-top:6px}.fraction{display:inline-flex;vertical-align:middle;flex-direction:column;text-align:center;align-items:center;justify-content:center;line-height:1.1;font-variant-numeric:tabular-nums;margin:0 .18em;min-width:1.2em;font-weight:650}.fraction .num{padding:0 .14em .13em}.fraction .den{border-top:1.6px solid currentColor;min-width:100%;padding:.14em .14em 0}.equation{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;font-size:1.35rem;line-height:1.8;padding:8px 0}.fraction.large{font-size:2rem}.fraction-input{display:inline-grid;grid-template-rows:1fr 1fr;gap:9px;padding:8px 0;position:relative;width:106px}.fraction-input::after{position:absolute;content:"";width:100%;height:2px;background:var(--ink);top:50%;left:0}.fraction-input input{width:100%;text-align:center;height:49px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);font-size:1.22rem}.answer-row{display:flex;align-items:center;flex-wrap:wrap;gap:18px;margin:23px 0 4px}.answer-row .muted{max-width:240px;font-size:.82rem}.integer-input{border:1px solid var(--line);background:var(--surface);border-radius:11px;padding:12px;width:150px;font-size:1.2rem;color:var(--ink)}input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;min-height:32px}select{border:1px solid var(--line);border-radius:10px;padding:9px 34px 9px 11px;background:var(--surface);color:var(--ink);max-width:100%;min-height:44px}input[type=number]{font-variant-numeric:tabular-nums}output{font-variant-numeric:tabular-nums}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border:1px solid transparent;background:var(--accent);color:white;padding:11px 19px;border-radius:11px;min-height:46px;font-weight:600;font-size:.9rem;line-height:1.45;transition:background .15s,transform .15s}.btn:hover:not(:disabled){background:var(--accent-dark)}.btn:active:not(:disabled){transform:translateY(1px)}.btn-secondary{color:var(--ink);border-color:var(--line);background:var(--surface)}.btn-secondary:hover:not(:disabled){background:#eef1e8}.btn-small{font-size:.8rem;padding:7px 12px;min-height:38px}.btn-quiet{background:#edf0e7;color:var(--ink)}.btn-quiet:hover:not(:disabled){background:#e1e7d9}.btn-warning{background:var(--error);color:white}.btn-warning:hover:not(:disabled){background:#7b3328}.btn-group{display:flex;flex-wrap:wrap;gap:8px}.btn[aria-pressed=true].btn-secondary{background:var(--accent);color:white;border-color:var(--accent)}
+    .lab-controls{display:flex;align-items:flex-end;flex-wrap:wrap;gap:17px;margin-bottom:23px}.lab-control{display:flex;flex-direction:column;gap:6px;flex:1 1 150px;min-width:0;font-size:.84rem;color:var(--muted)}.lab-control>label,.lab-control>span:first-child{font-weight:550;color:var(--ink)}.lab-control input[type=number]{padding:8px 9px;min-width:50px;width:100%;border:1px solid var(--line);border-radius:9px}.lab-model{margin:21px 0}.strip{display:grid;position:relative;min-height:58px;background:#edf0e7;border-radius:8px;overflow:hidden;width:100%;isolation:isolate}.segment{position:relative;min-width:0;min-height:58px;background:#edf0e7;border:0;border-right:2px solid var(--surface);padding:0;font-size:.8rem;font-weight:650;color:var(--ink);display:grid;place-items:center}.segment:last-child{border-right:0}.segment.is-filled{background:var(--accent);color:#fff}.segment.is-warm{background:var(--warm);color:#3f3322}.segment.is-removed{background:repeating-linear-gradient(135deg,#dba799 0 5px,#fbebe6 5px 10px);color:var(--error)}button.segment:hover{filter:brightness(.94)}button.segment:focus-visible{outline:3px solid var(--ink);outline-offset:-4px;z-index:2}.model-caption{font-size:.82rem;color:var(--muted);margin:8px 0 15px;line-height:1.6}.lab-readout{display:flex;gap:15px;align-items:center;justify-content:center;flex-wrap:wrap;min-height:73px;font-size:1rem;margin:18px 0}.lab-readout>.fraction{font-size:1.8rem}.lab-goal{border-top:1px solid var(--line);margin-top:21px;padding-top:18px;font-size:.9rem;line-height:1.7}.lab-goal .btn{margin:12px 8px 0 0}.lab-feedback{font-size:.88rem;margin-top:12px;padding:11px 14px;border-radius:10px;background:#f0f2ea;line-height:1.6}.lab-feedback:empty{display:none}.lab-feedback.is-success{background:var(--accent-soft);color:var(--accent-dark)}.lab-feedback.is-error{background:var(--error-soft);color:var(--error)}.lab-legend{display:flex;gap:15px;align-items:center;flex-wrap:wrap;font-size:.8rem;color:var(--muted);margin:12px 0}.lab-legend>span{display:inline-flex;align-items:center;gap:6px}.lab-legend i{width:12px;height:12px;display:inline-block;border-radius:3px;background:var(--accent)}.lab-step-label{font-size:.82rem;font-weight:650;margin:15px 0 8px}.lab-chip-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(87px,1fr));gap:10px;margin:20px 0}.lab-chip-group{min-height:100px;border:1px solid var(--line);padding:12px 8px;background:#f3f5ed;border-radius:12px;display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;color:var(--ink)}.lab-chip-group.is-selected{background:var(--accent-soft);border-color:var(--accent)}.lab-chip{width:16px;height:16px;border-radius:50%;background:#a6b7a9;display:inline-block}.lab-chip-group.is-selected .lab-chip{background:var(--accent)}.lab-unit-row{display:flex;align-items:flex-start;gap:12px;margin:14px 0;flex-wrap:wrap}.lab-unit{flex:1 1 180px;min-width:0}.lab-equation{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:9px;font-size:1.3rem;margin:18px 0;line-height:1.8}.lab-toggle-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:15px 0}.callout{font-size:.88rem;background:#f1f4eb;padding:14px 16px;border-radius:12px;line-height:1.7;margin-top:15px}.control{display:flex;flex-direction:column;gap:6px;font-size:.85rem;min-width:0}.lab-comparison-sign{font-size:2rem;text-align:center;font-weight:700;margin:12px 0;color:var(--accent-dark)}svg{max-width:100%;height:auto;display:block}svg text{font-family:inherit}.lab-model svg{overflow:visible}
+    .quiz-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:17px}.quiz-heading p{font-size:.81rem;color:var(--muted);margin-top:5px}.question-dots{display:flex;gap:6px}.question-dot{width:28px;height:28px;border:1px solid var(--line);border-radius:8px;background:transparent;font-size:.73rem;padding:0}.question-dot.is-active{border-color:var(--ink);background:var(--ink);color:white}.question-dot.is-solved{background:var(--accent-soft);color:var(--accent-dark);border-color:#abcbbb}.question-dot.is-active.is-solved{background:var(--accent);color:white;border-color:var(--accent)}.question-card{padding:24px 25px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}.question-meta{display:flex;align-items:center;gap:10px;margin-bottom:15px;font-size:.72rem;color:var(--muted)}.question-prompt{font-size:1.06rem;line-height:1.8;font-weight:550;margin:0 0 20px;display:block}.question-prompt .fraction{font-size:1em;margin:0 .3em}.choice-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;border:0;padding:0;margin:18px 0}.choice{position:relative;display:flex;align-items:center;gap:10px;min-height:56px;padding:13px 14px;border:1px solid var(--line);border-radius:12px;font-size:.9rem;line-height:1.55;cursor:pointer}.choice input{accent-color:var(--accent);width:17px;height:17px;flex:0 0 17px;margin:0}.choice:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}.choice:hover{background:#f2f4ec}.choice:has(input:disabled){cursor:default}.choice-label{flex:1}.question-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin-top:21px}.hint-button{background:none;border:0;padding:8px 0;font-size:.84rem;color:var(--muted);text-decoration:underline;text-underline-offset:4px}.hint-button:hover{color:var(--ink)}.feedback{display:flex;gap:11px;font-size:.91rem;line-height:1.7;padding:15px 17px;border-radius:12px;margin-top:19px;background:#f2f4ec}.feedback .feedback-symbol{display:flex;align-items:center;justify-content:center;flex:0 0 23px;width:23px;height:23px;border-radius:50%;background:#dee5d8;margin-top:2px;font-weight:750}.feedback.success{background:var(--accent-soft)}.feedback.success .feedback-symbol{background:#bfdcca;color:var(--accent-dark)}.feedback.error{background:var(--error-soft)}.feedback.error .feedback-symbol{background:#f1c5b9;color:var(--error)}.feedback.hint{background:var(--warm-soft)}.feedback.hint .feedback-symbol{background:#edd5a1;color:#695125}.feedback strong{display:block;margin-bottom:3px}.feedback:empty{display:none}.question-footer{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-top:19px}.question-footer .muted{font-size:.76rem}.next-question{display:inline-flex;align-items:center;gap:8px;border:0;background:transparent;font-size:.86rem;color:var(--accent-dark);padding:8px 0;font-weight:650}.lesson-end{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:27px;padding-top:23px;border-top:1px solid var(--line)}.lesson-end p{font-size:.87rem;color:var(--muted)}.lesson-end strong{display:block;color:var(--ink);font-size:.93rem}.end-actions{display:flex;gap:9px;align-items:center;flex-shrink:0}.back-chapter{border:1px solid var(--line);background:transparent;border-radius:11px;min-width:44px;height:46px;font-size:1.1rem}.back-chapter:hover{background:#e9ece2}.completion-banner{padding:19px 21px;margin-bottom:22px;border:1px solid #b1cabc;background:var(--accent-soft);border-radius:16px;font-size:.9rem}.completion-banner strong{color:var(--accent-dark)}
+    .practice-intro{margin:20px 0 24px;padding:20px 23px;background:var(--accent-soft);border-radius:15px;font-size:.94rem}.practice-controls{display:flex;align-items:flex-end;flex-wrap:wrap;gap:15px;margin-bottom:22px}.practice-controls .control{flex:1 1 220px}.practice-note{font-size:.83rem;color:var(--muted);padding-top:13px}.concept-map{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.concept-card{background:var(--surface);border:1px solid var(--line);padding:16px;border-radius:14px;font-size:.82rem;line-height:1.7}.concept-card strong{font-size:.84rem;display:block}.concept-card .fraction{font-size:1.1rem;margin:9px .2em}.mini-badge{display:inline-flex;align-items:center;font-size:.7rem;background:#edf0e6;border-radius:6px;padding:3px 8px;margin-left:5px}.footer{font-size:.73rem;color:var(--muted);border-top:1px solid var(--line);padding:24px 0 0;margin-top:33px;display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap}.footer button{font-size:inherit;padding:0}.no-js{padding:25px;margin:25px;border:1px solid var(--error);border-radius:14px;background:var(--error-soft)}
+    .modal-backdrop{position:fixed;inset:0;background:#182f2d55;z-index:90;display:grid;place-items:center;padding:22px;backdrop-filter:blur(4px)}.modal{position:relative;max-width:650px;width:100%;max-height:88vh;overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:32px;box-shadow:0 20px 80px #14262730;line-height:1.8}.modal h2{padding-right:28px;margin-bottom:18px;font-size:1.65rem}.modal h3{margin:22px 0 9px}.modal p,.modal li{font-size:.94rem}.modal ol{padding-left:23px}.modal li{padding-left:4px;margin:10px 0}.modal-close{position:absolute;right:20px;top:18px;border:0;background:#edf0e7;border-radius:50%;width:34px;height:34px;font-size:1.3rem;line-height:1}.modal .btn-group{margin-top:25px}.guide-tag{font-size:.76rem;font-weight:650;color:var(--accent-dark);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}.cheat-grid{display:grid;gap:10px}.cheat-item{padding:13px 16px;background:#f2f4ec;border-radius:11px}.cheat-item p{font-size:.85rem;margin-top:5px}.cheat-item strong{font-size:.92rem}.cheat-item .equation{font-size:1.12rem;justify-content:flex-start;margin:0;padding:7px 0 0}
+    .lab-range-row{display:flex;align-items:center;gap:14px}.lab-range-row input{flex:1;min-width:0}.lab-range-row output{font-size:1.02rem;min-width:2.2ch;text-align:center;font-weight:650;color:var(--ink)}.lab-frac{display:inline-block;vertical-align:middle}.lab-piece-number{font-size:.84rem}.lab-readout{display:block;text-align:center}.lab-readout>.lab-equation{margin:10px 0}.lab-readout>p,.lab-readout>.lab-legend{font-size:.88rem;max-width:650px;margin:12px auto 0}.lab-readout .lab-legend{justify-content:center}.lab-unit-row>.lab-unit{flex:none;width:100%}.lab-mixed{white-space:nowrap;display:inline-block}.lab-chip-group{flex-direction:column;gap:10px}.lab-chip-group.is-selected{color:var(--accent-dark);box-shadow:inset 0 0 0 1px var(--accent)}.lab-group-label{font-size:.74rem;line-height:1.4}.lab-fraction-controls{margin:0;padding:13px;min-width:0;flex:1 1 200px;border:1px solid var(--line);border-radius:13px;display:flex;gap:12px}.lab-fraction-controls legend{font-size:.8rem;font-weight:650;padding:0 6px}.lab-fraction-controls .lab-control{flex:1 1 0;font-size:.77rem}.lab-relation{font-size:1.7rem;margin:0 8px}.strip .segment:not(.is-filled):not(.is-removed){background:#e9eee5!important}.lab-number-line{min-height:125px}
+    @media(min-width:1200px){.shell{gap:62px}.lesson-card{padding:31px 33px}}
+    @media(max-width:950px){.topbar{padding:20px 28px}.shell{grid-template-columns:188px minmax(0,1fr);gap:27px;padding:30px 26px}.nav-item{padding:10px 7px;font-size:.85rem}.nav-number{flex-basis:25px;height:25px}.lesson-card{padding:23px}.question-card{padding:22px}.lesson-end{align-items:flex-start;flex-direction:column}.concept-map{grid-template-columns:1fr 1fr}}
+    @media(max-width:700px){.topbar{min-height:77px;padding:17px 20px}.brand-name{font-size:1.35rem}.brand-caption{font-size:.67rem}.brand-mark{width:35px;height:35px}.offline-mark{display:none}.header-actions{gap:0}.text-button{font-size:.78rem}.shell{display:block;padding:0 18px 35px}.sidebar-inner{position:static;padding:20px 0 16px}.sidebar-inner>.eyebrow,.sidebar-note,.sidebar-bottom{display:none}.route-progress{margin:0 2px 13px}.progress-caption{font-size:.75rem;margin-bottom:6px}.chapter-nav{display:flex;overflow-x:auto;padding:2px 2px 10px;gap:7px;scroll-snap-type:x proximity;scrollbar-width:thin}.nav-item{flex:0 0 auto;width:auto;min-height:43px;padding:7px 10px;gap:7px;scroll-snap-align:start;border:1px solid var(--line);border-radius:10px;white-space:nowrap;font-size:.8rem}.nav-copy small{display:none}.nav-number{flex-basis:22px;width:22px;height:22px;border-radius:6px;font-size:.67rem}.nav-check{font-size:.73rem}.nav-divider{width:1px;min-height:34px;flex:0 0 1px;margin:6px 2px}.lesson-top{margin-top:6px}.lesson-topline{margin-bottom:13px}.lesson-lead{font-size:1rem;margin-top:13px}.lesson-core{font-size:.94rem;margin-bottom:21px}.lesson-card{padding:22px 19px;border-radius:19px}.card-heading{gap:9px;margin-bottom:21px}.card-heading p{font-size:.83rem}.model-icon{width:32px;height:32px;font-size:1rem;border-radius:10px}h2{font-size:1.21rem}.insight{padding:16px 17px;gap:10px;font-size:.86rem}.theory{margin-top:16px}.question-card{padding:21px 18px;border-radius:19px}.question-prompt{font-size:1rem}.choice-list{grid-template-columns:1fr}.choice{min-height:53px;padding:12px 13px}.quiz-heading{align-items:flex-end}.quiz-heading p{font-size:.75rem}.question-dots{gap:4px}.question-dot{width:25px;height:27px}.question-actions{gap:13px}.lab-controls{gap:13px}.lab-control{flex-basis:125px}.strip,.segment{min-height:53px}.lab-equation{font-size:1.17rem}.lab-goal{font-size:.85rem}.lab-chip-groups{gap:8px}.lab-chip-group{min-height:92px}.lab-unit-row{gap:9px}.lab-unit{flex-basis:130px}.lesson-end{gap:15px}.end-actions{width:100%;justify-content:flex-end}.concept-map{grid-template-columns:1fr}.modal{padding:27px 22px;border-radius:20px}.modal h2{font-size:1.45rem}.modal-backdrop{padding:15px}.modal p,.modal li{font-size:.89rem}.footer{font-size:.7rem;margin-top:28px}.lesson-topline .pill{font-size:.67rem}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+    @media print{body{background:white}.topbar,.sidebar,.header-actions,.question-actions,.lesson-end,.footer,.modal-backdrop,.practice-controls{display:none!important}.shell{display:block;max-width:none;padding:0}h1{font-size:26pt}.lesson-card,.question-card{box-shadow:none;break-inside:avoid;border:1px solid #ccc}.theory-content{display:block}button{color:black}.lesson-top{margin-top:0}.strip,.segment{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+  </style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1929'/%3E%3Ctext x='15' y='46' fill='%2376edcb' font-family='Arial' font-size='42'%3ED%3C/text%3E%3C/svg%3E"></head>
+<body>
+  <nav aria-label="Портфолио" style="max-width:1420px;margin:0 auto;padding:12px 20px;font-size:.875rem"><a href="https://github.com/dmitrii-naumenko/portfolio/blob/main/projects/school.md">К проекту School Lab</a></nav>
+  <a class="skip-link" href="#main">Перейти к уроку</a>
+  <header class="topbar">
+    <div class="brand" aria-label="Дроби. Лаборатория частей">
+      <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div><div class="brand-name">Дроби<span style="color:var(--accent)">.</span></div><div class="brand-caption">ЛАБОРАТОРИЯ ЧАСТЕЙ</div></div>
+    </div>
+    <div class="header-actions"><span class="offline-mark">Работает без интернета</span><button class="text-button" id="help-open" type="button">Как заниматься</button></div>
+  </header>
+  <noscript><div class="no-js"><h2>Для интерактивного урока нужен JavaScript</h2><p>Открой этот HTML-файл в обычном браузере с включённым JavaScript. Дробь показывает, сколько равных долей целого взято: в записи 3/4 снизу стоит число равных долей в целом, сверху — сколько таких долей взяли.</p></div></noscript>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Маршрут урока">
+      <div class="sidebar-inner">
+        <div class="eyebrow">От открытия к пониманию</div>
+        <div class="route-progress"><div class="progress-caption"><span>Основной маршрут</span><span id="progress-text">0 из 6</span></div><div class="progress-track" role="progressbar" aria-label="Решённые основные главы" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" id="course-progress"><div class="progress-fill" id="progress-fill"></div></div></div>
+        <nav class="chapter-nav" id="chapter-nav" aria-label="Главы"></nav>
+        <div class="sidebar-note"><strong>Здесь можно ошибаться.</strong><br>Попробуй, посмотри на модель и объясни результат своими словами. Скорость не важна.</div>
+        <div class="sidebar-bottom"><button class="text-button" type="button" data-open-cheatsheet>Памятка по дробям ↗</button></div>
+      </div>
+    </aside>
+    <main id="main" tabindex="-1" aria-label="Интерактивный урок"></main>
+  </div>
+  <div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1"><button class="modal-close" id="modal-close" type="button" aria-label="Закрыть окно">×</button><div id="modal-content"></div></section></div>
+  <script>
+/*
+ * Банк заданий для первого знакомства с обыкновенными дробями.
+ * lesson 0–5 — основные разделы; lesson 6 — необязательный бонус.
+ * В вопросах типа fraction допустим любой равный рациональный ответ.
+ */
+window.FRACTION_QUESTIONS = [
+  {
+    id: 'parts-share', lesson: 0, type: 'fraction', difficulty: 'base',
+    prompt: 'Плитку шоколада разделили на 8 равных долек. Ты взял 3 дольки. Какую долю всей плитки ты взял?',
+    answer: { n: 3, d: 8 },
+    hint: 'Внизу запиши число равных долек во всей плитке, вверху — сколько долек ты взял.',
+    explanation: '3/8: целая плитка состоит из восьми равных долек, а взяты три. Знаменатель — 8, числитель — 3.'
+  },
+  {
+    id: 'parts-denominator', lesson: 0, type: 'choice', difficulty: 'base',
+    prompt: 'Что означает число 10 в дроби 7/10?',
+    options: ['Взяли 10 частей.', 'Целое разделили на 10 равных частей.', 'Всего было 10 целых предметов.', 'Осталось 10 частей.'],
+    answer: 1,
+    hint: 'Знаменатель стоит под чертой и задаёт размер одной доли.',
+    explanation: '10 — знаменатель: целое разделили на десять равных частей. Одна часть — 1/10; семь таких частей — 7/10.'
+  },
+  {
+    id: 'parts-unequal', lesson: 0, type: 'choice', difficulty: 'base',
+    prompt: 'Пирог разрезали на 3 куска. Один кусок заметно больше двух других. Можно ли назвать каждый кусок одной третью пирога?',
+    options: ['Да: кусков ведь три.', 'Да, если куски одной формы.', 'Нет: для третей нужны три равные по размеру части.'],
+    answer: 2,
+    hint: 'Для дроби важно не только число частей. Какими должны быть эти части?',
+    explanation: 'Одна треть — одна из трёх равных частей целого. Само по себе наличие трёх кусков ещё не делает каждый из них третью.'
+  },
+  {
+    id: 'parts-numerator', lesson: 0, type: 'integer', difficulty: 'base',
+    prompt: 'Полоску разделили на 6 равных частей и закрасили 5. Какое число будет числителем дроби, описывающей закрашенную долю?',
+    answer: 5,
+    hint: 'Числитель отвечает на вопрос «сколько таких частей взяли?».',
+    explanation: 'Числитель — 5: закрашены пять шестых, то есть 5/6 полоски.'
+  },
+  {
+    id: 'line-second-step', lesson: 1, type: 'fraction', difficulty: 'base',
+    prompt: 'Отрезок от 0 до 1 разделили на 5 равных шагов. Какое число находится после второго шага от нуля?',
+    answer: { n: 2, d: 5 },
+    hint: 'Один шаг — 1/5. Нужно сделать два таких шага.',
+    explanation: 'После двух шагов по 1/5 получится 2/5. Дробь обозначает число, у которого есть своё место на прямой.'
+  },
+  {
+    id: 'line-one', lesson: 1, type: 'choice', difficulty: 'base',
+    prompt: 'Какая дробь равна ровно одному целому?',
+    options: ['1/7', '0/7', '8/7', '7/7'],
+    answer: 3,
+    hint: 'Чтобы собрать одно целое из седьмых, нужно взять все семь седьмых.',
+    explanation: '7/7 = 1. Числитель и знаменатель одинаковы: взяты все части одного целого.'
+  },
+  {
+    id: 'line-beyond-one', lesson: 1, type: 'fraction', difficulty: 'base',
+    prompt: 'Ты идёшь по числовой прямой от 0 шагами по 1/4. Какое число получится после пяти шагов?',
+    answer: { n: 5, d: 4 },
+    hint: 'Четыре шага приведут к 1. Пятый шаг будет ещё на четверть дальше.',
+    explanation: '5/4 = 1 + 1/4. Дроби могут быть больше единицы: пять четвертей — это одно целое и ещё четверть.'
+  },
+  {
+    id: 'line-zero', lesson: 1, type: 'choice', difficulty: 'base',
+    prompt: 'Какая дробь находится на числовой прямой в той же точке, что и 0?',
+    options: ['0/8', '8/8', '8/1', '1/8'],
+    answer: 0,
+    hint: 'Если не взять ни одной восьмой, сколько получится?',
+    explanation: '0/8 = 0: взяли ноль частей. Знаменатель при этом остаётся ненулевым.'
+  },
+  {
+    id: 'equal-pair', lesson: 2, type: 'choice', difficulty: 'base',
+    prompt: 'Какая дробь обозначает ту же долю целого, что и 3/4?',
+    options: ['3/8', '4/5', '6/8', '6/4'],
+    answer: 2,
+    hint: 'Мысленно раздели каждую четверть ещё на две равные части.',
+    explanation: '3/4 = 6/8. Доли стали вдвое меньше, зато их взяли вдвое больше. Количество не изменилось.'
+  },
+  {
+    id: 'equal-subdivide', lesson: 2, type: 'integer', difficulty: 'base',
+    prompt: 'На полоске закрашены 3 из 4 равных частей. Каждую часть разрезали ещё пополам. Сколько маленьких частей теперь закрашено?',
+    answer: 6,
+    hint: 'Каждая из трёх закрашенных частей превратилась в две.',
+    explanation: 'Закрашено 3 × 2 = 6 маленьких частей из 8. Это показывает, почему 3/4 = 6/8.'
+  },
+  {
+    id: 'equal-reduce', lesson: 2, type: 'choice', difficulty: 'base',
+    prompt: 'Как выглядит дробь 6/9 после сокращения до несократимой дроби?',
+    options: ['3/6', '2/3', '1/3', '6/3'],
+    answer: 1,
+    hint: 'И 6, и 9 делятся на 3. Раздели оба числа на 3.',
+    explanation: '6/9 = (6 ÷ 3)/(9 ÷ 3) = 2/3. Числитель и знаменатель 2 и 3 уже нельзя разделить на одно и то же целое число больше 1.'
+  },
+  {
+    id: 'equal-add-trap', lesson: 2, type: 'choice', difficulty: 'stretch',
+    prompt: 'Петя превратил 2/3 в 3/4: прибавил по 1 к числителю и знаменателю. Сохранилось ли значение дроби?',
+    options: ['Да: к обоим числам прибавили поровну.', 'Да: оба числа стали больше.', 'Нет: одинаковое прибавление здесь изменило дробь.'],
+    answer: 2,
+    hint: 'Для сохранения дроби обе её части умножают или делят на одно и то же ненулевое число. Прибавление работает иначе.',
+    explanation: '2/3 = 8/12, а 3/4 = 9/12: значения разные. Одинаковое прибавление к числителю и знаменателю не является правилом получения равных дробей.'
+  },
+  {
+    id: 'compare-same-denominator', lesson: 3, type: 'choice', difficulty: 'base',
+    prompt: 'Какая дробь больше: 3/7 или 5/7?',
+    options: ['3/7', 'Они равны.', 'Сравнить невозможно.', '5/7'],
+    answer: 3,
+    hint: 'Размер долей одинаковый. Сравни, сколько долей взяли.',
+    explanation: '5/7 > 3/7: пять седьмых больше трёх седьмых, потому что каждая доля имеет один и тот же размер.'
+  },
+  {
+    id: 'compare-unit-fractions', lesson: 3, type: 'choice', difficulty: 'base',
+    prompt: 'Два пирога одинакового размера. Что больше: 1/3 одного пирога или 1/6 другого?',
+    options: ['1/3 пирога', '1/6 пирога', 'Поровну'],
+    answer: 0,
+    hint: 'Если одно и то же целое делить на большее число равных частей, каждая часть становится меньше.',
+    explanation: '1/3 > 1/6. Одна треть занимает столько же места, сколько две шестых: 1/3 = 2/6.'
+  },
+  {
+    id: 'compare-different-denominators', lesson: 3, type: 'choice', difficulty: 'stretch',
+    prompt: 'Какая дробь больше: 4/5 или 5/6?',
+    options: ['4/5', '5/6', 'Они равны.'],
+    answer: 1,
+    hint: 'Обе дроби можно выразить в тридцатых. Ещё можно подумать, какой из них меньше не хватает до 1.',
+    explanation: '4/5 = 24/30, а 5/6 = 25/30, поэтому 5/6 больше. Ей не хватает до целого только 1/6; это меньше, чем 1/5.'
+  },
+  {
+    id: 'compare-different-wholes', lesson: 3, type: 'choice', difficulty: 'stretch',
+    prompt: 'Аня съела 1/2 своей пиццы, Боря — 1/3 своей. Пиццы были разной массы, но их массы неизвестны. Можно ли точно сказать, кто съел больше по массе?',
+    options: ['Аня: 1/2 больше 1/3.', 'Боря: его доля разделена на большее число частей.', 'Нет: нужно знать массы обеих пицц.'],
+    answer: 2,
+    hint: 'Половина маленького целого и треть большого — это доли разных количеств.',
+    explanation: 'Как числа, 1/2 > 1/3. Но массу съеденного нельзя сравнить без размеров целых: треть большой пиццы может быть тяжелее половины маленькой.'
+  },
+  {
+    id: 'add-same-denominator', lesson: 4, type: 'fraction', difficulty: 'base',
+    prompt: 'Вычисли: 2/7 + 3/7.',
+    answer: { n: 5, d: 7 },
+    hint: 'Две седьмых и ещё три седьмых. Сколько всего седьмых?',
+    explanation: '2/7 + 3/7 = 5/7. Складываем количество одинаковых долей. Их размер остаётся прежним, поэтому знаменатель не меняется.'
+  },
+  {
+    id: 'subtract-same-denominator', lesson: 4, type: 'fraction', difficulty: 'base',
+    prompt: 'Было 7/8 литра сока. Выпили 3/8 литра. Сколько литра осталось?',
+    answer: { n: 1, d: 2 },
+    hint: 'Из семи восьмых убери три восьмых.',
+    explanation: '7/8 − 3/8 = 4/8 = 1/2 литра. И 4/8, и 1/2 — правильные записи ответа.'
+  },
+  {
+    id: 'add-denominators-trap', lesson: 4, type: 'fraction', difficulty: 'base',
+    prompt: 'Вычисли: 1/3 + 1/4. Сначала вырази обе дроби в одинаковых долях.',
+    answer: { n: 7, d: 12 },
+    hint: '1/3 = 4/12, а 1/4 = 3/12. Теперь можно сложить двенадцатые.',
+    explanation: '1/3 + 1/4 = 4/12 + 3/12 = 7/12. Ответ 2/7 неверен: трети и четверти имеют разный размер, а сложение знаменателей не делает доли одинаковыми.'
+  },
+  {
+    id: 'subtract-from-one', lesson: 4, type: 'fraction', difficulty: 'base',
+    prompt: 'От целой ленты отрезали 5/6. Какая доля ленты осталась?',
+    answer: { n: 1, d: 6 },
+    hint: 'Одно целое — это 6/6. Вычти из шести шестых пять шестых.',
+    explanation: '1 − 5/6 = 6/6 − 5/6 = 1/6. Перед вычитанием целое удобно выразить в тех же долях.'
+  },
+  {
+    id: 'add-beyond-one', lesson: 4, type: 'fraction', difficulty: 'stretch',
+    prompt: 'Вычисли: 3/4 + 2/3. Ответ может быть больше одного целого.',
+    answer: { n: 17, d: 12 },
+    hint: 'Переведи обе дроби в двенадцатые: 3/4 = 9/12, 2/3 = 8/12.',
+    explanation: '9/12 + 8/12 = 17/12. Это 1 + 5/12: дробь больше 1 — нормальный результат сложения.'
+  },
+  {
+    id: 'quantity-basic', lesson: 5, type: 'integer', difficulty: 'base',
+    prompt: 'У Саши 20 наклеек. Он подарил 3/5 всех наклеек. Сколько наклеек он подарил?',
+    answer: 12,
+    hint: 'Сначала найди одну пятую: раздели 20 на 5. Затем возьми три такие части.',
+    explanation: 'Одна пятая — 20 ÷ 5 = 4 наклейки. Три пятых — 4 × 3 = 12 наклеек.'
+  },
+  {
+    id: 'quantity-remainder', lesson: 5, type: 'integer', difficulty: 'base',
+    prompt: 'В коробке 18 карандашей. Цветные составляют 2/3 всех карандашей, остальные — простые. Сколько простых карандашей?',
+    answer: 6,
+    hint: 'Если 2/3 цветные, какая доля приходится на простые? Можно также сначала посчитать цветные.',
+    explanation: 'На простые приходится 1 − 2/3 = 1/3 всех карандашей. 18 ÷ 3 = 6 простых карандашей.'
+  },
+  {
+    id: 'quantity-more-than-whole', lesson: 5, type: 'integer', difficulty: 'stretch',
+    prompt: 'Для первого макета нужно 8 деталей. Для нового нужно 3/2 от этого количества. Сколько деталей нужно для нового макета?',
+    answer: 12,
+    hint: 'Половина от 8 — это 4. Нужно взять три половины.',
+    explanation: '8 ÷ 2 × 3 = 12. Дробь 3/2 больше 1, поэтому её доля от положительного количества больше исходного количества: 8 + 4 = 12.'
+  },
+  {
+    id: 'quantity-recover-whole', lesson: 5, type: 'integer', difficulty: 'stretch',
+    prompt: 'Маша прочитала 60 страниц — это 3/4 всей книги. Сколько страниц в книге?',
+    answer: 80,
+    hint: 'Три четверти — 60 страниц. Сколько страниц в одной четверти? А в четырёх?',
+    explanation: 'Одна четверть — 60 ÷ 3 = 20 страниц. Вся книга — 20 × 4 = 80 страниц.'
+  },
+  {
+    id: 'bonus-multiply-meaning', lesson: 6, type: 'fraction', difficulty: 'stretch',
+    prompt: 'Возьми половину от 3/4 целой полоски. Какая доля целой полоски получится? Так можно понять действие 1/2 × 3/4.',
+    answer: { n: 3, d: 8 },
+    hint: 'Каждую из трёх четвертей раздели пополам и возьми по одной половинке. Как теперь называется такая маленькая часть?',
+    explanation: 'Половина каждой четверти — одна восьмая. Получается три восьмых: 1/2 × 3/4 = 3/8. Умножение на 1/2 уменьшило положительное число вдвое.'
+  },
+  {
+    id: 'bonus-divide-measure', lesson: 6, type: 'integer', difficulty: 'stretch',
+    prompt: 'Есть 3/4 литра сока. Каждая порция — 1/8 литра. Сколько полных порций получится? Это действие 3/4 ÷ 1/8.',
+    answer: 6,
+    hint: 'Представь 3/4 литра как 6/8 литра. Посчитай, сколько раз в этом количестве помещается 1/8 литра.',
+    explanation: 'В 6/8 помещаются шесть порций по 1/8. Поэтому 3/4 ÷ 1/8 = 6. Здесь деление отвечает на вопрос «сколько таких порций?». '
+  },
+  {
+    id: 'bonus-divide-share', lesson: 6, type: 'fraction', difficulty: 'stretch',
+    prompt: 'Осталась 1/2 пиццы. Эту половину поровну разделили между двумя друзьями. Какую долю целой пиццы получил каждый?',
+    answer: { n: 1, d: 4 },
+    hint: 'Половину нужно разделить ещё на две равные части.',
+    explanation: 'Каждый получил половину от половины, то есть 1/4 целой пиццы. Это другой знакомый смысл деления: 1/2 ÷ 2 = 1/4.'
+  },
+  {
+    id: 'bonus-between', lesson: 6, type: 'integer', difficulty: 'stretch',
+    prompt: 'Найди целое число вместо вопроса: дробь ?/12 должна быть строго больше 1/2, но строго меньше 2/3.',
+    answer: 7,
+    hint: '1/2 = 6/12, а 2/3 = 8/12. Какое целое число находится строго между 6 и 8?',
+    explanation: 'Подходит 7: 6/12 < 7/12 < 8/12. Поэтому 1/2 < 7/12 < 2/3.'
+  },
+  {
+    id: 'bonus-pencil-mystery', lesson: 6, type: 'integer', difficulty: 'stretch',
+    prompt: 'В коробке половина всех карандашей — синие, треть — красные, а остальные 2 карандаша — зелёные. Каждый карандаш одного цвета. Сколько карандашей в коробке?',
+    answer: 12,
+    hint: 'Синие и красные вместе занимают 1/2 + 1/3. Найди оставшуюся долю. Эта доля равна двум карандашам.',
+    explanation: '1/2 + 1/3 = 3/6 + 2/6 = 5/6. Зелёные составляют 1/6. Если одна шестая — 2 карандаша, то всего 2 × 6 = 12.'
+  }
+];
+
+  </script>
+  <script>
+(function () {
+  "use strict";
+
+  let instanceNumber = 0;
+  const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+  const safeInt = (value, fallback, min, max) => {
+    const n = Number(value);
+    return Number.isFinite(n) && String(value).trim() !== ""
+      ? clamp(Math.round(n), min, max)
+      : fallback;
+  };
+  const euclid = (a, b) => {
+    a = Math.abs(a);
+    b = Math.abs(b);
+    while (b) [a, b] = [b, a % b];
+    return a || 1;
+  };
+
+  function makeHelpers(helpers) {
+    const source = helpers || {};
+    const gcd = source.gcd || euclid;
+    const frac = source.frac || ((n, d) => `<span class="fraction"><span>${n}</span><span>${d}</span></span>`);
+    return {
+      uid: `fraction-lab-${++instanceNumber}`,
+      gcd,
+      lcm: source.lcm || ((a, b) => Math.abs(a * b) / gcd(a, b)),
+      f: (n, d) => `<span class="lab-frac" role="img" aria-label="Дробь ${n}/${d}">${frac(n, d)}</span>`
+    };
+  }
+
+  function pieceStrip(n, d, options = {}) {
+    const color = options.color || "accent";
+    const label = options.label || `Целое разделено на ${d} равных частей; закрашено ${n}.`;
+    const cells = Array.from({ length: d }, (_, i) => {
+      const fill = options.colors ? options.colors[i] : i < n ? color : "";
+      const klass = fill === "warm" ? " is-filled is-warm" : fill === "removed" ? " is-removed" : fill ? " is-filled" : "";
+      const style = fill === "warm" ? "background:var(--warm)" : fill === "removed" ? "background:repeating-linear-gradient(135deg,var(--warm-soft),var(--warm-soft) 5px,transparent 5px,transparent 10px)" : fill ? "background:var(--accent)" : "background:var(--surface)";
+      return `<span class="segment${klass}" style="${style};min-width:0" aria-hidden="true"></span>`;
+    }).join("");
+    return `<div class="strip" role="img" aria-label="${label}" style="display:grid;grid-template-columns:repeat(${d},minmax(0,1fr));width:100%;min-height:66px;overflow:hidden">${cells}</div>`;
+  }
+
+  function continuousStrip(n, d, ticks, color, label) {
+    return `<div class="strip lab-continuous-strip" role="img" aria-label="${label}" style="display:block;position:relative;width:100%;height:66px;overflow:hidden">
+      <span aria-hidden="true" style="position:absolute;inset:0 auto 0 0;width:${100 * n / d}%;background:var(--${color})"></span>
+      <span aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(to right,var(--line) 1px,transparent 1px);background-size:${100 / ticks}% 100%;pointer-events:none"></span>
+    </div>`;
+  }
+
+  function showFeedback(element, kind, html) {
+    element.className = `lab-feedback${kind ? ` is-${kind}` : ""}`;
+    element.innerHTML = html;
+  }
+
+  function wholeWords(n) {
+    return n === 1 ? "1 целое" : `${n} целых`;
+  }
+
+  function chipWord(n) {
+    const lastTwo = n % 100;
+    const last = n % 10;
+    return lastTwo >= 11 && lastTwo <= 14 ? "фишек" : last === 1 ? "фишка" : last >= 2 && last <= 4 ? "фишки" : "фишек";
+  }
+
+  function mountParts(container, h) {
+    let denominator = 4;
+    let selected = new Set([0]);
+    container.innerHTML = `
+      <div class="lab-controls">
+        <label class="lab-control" for="${h.uid}-d"><span>Равных частей в целом</span>
+          <span class="lab-range-row"><input id="${h.uid}-d" data-den type="range" min="2" max="12" step="1" value="4"><output data-den-output for="${h.uid}-d">4</output></span>
+        </label>
+      </div>
+      <div class="lab-model">
+        <p class="model-caption">Нажимай на части, чтобы закрасить их или снять выбор.</p>
+        <div class="strip lab-clickable-strip" data-pieces role="group" aria-label="Части одного целого" style="display:grid;width:100%;min-height:84px;overflow:hidden"></div>
+        <p class="model-caption">Длина целого не меняется. Все его части равны.</p>
+      </div>
+      <div class="lab-readout" data-readout aria-live="polite" aria-atomic="true"></div>
+      <div class="lab-goal">
+        <div><span class="pill">Твоя цель</span> <strong>Собери ${h.f(3, 4)} целого.</strong></div>
+        <button class="btn btn-secondary" data-check type="button">Проверить рисунок</button>
+        <div class="lab-feedback" data-feedback role="status" aria-live="polite"></div>
+      </div>`;
+
+    const pieces = container.querySelector("[data-pieces]");
+    const readout = container.querySelector("[data-readout]");
+    const feedback = container.querySelector("[data-feedback]");
+
+    function updateReadout() {
+      const n = selected.size;
+      readout.innerHTML = `<div class="lab-equation">${h.f(n, denominator)}<span>Выбрано <strong>${n}</strong> из <strong>${denominator}</strong> равных частей.</span></div>
+        <div class="lab-legend"><span><strong>${n}</strong> — числитель: сколько взяли.</span><span><strong>${denominator}</strong> — знаменатель: на сколько равных частей разделили целое.</span></div>`;
+    }
+
+    function renderPieces() {
+      pieces.style.gridTemplateColumns = `repeat(${denominator},minmax(0,1fr))`;
+      pieces.innerHTML = Array.from({ length: denominator }, (_, i) => `<button class="segment${selected.has(i) ? " is-filled" : ""}" data-piece="${i}" type="button" aria-label="Часть ${i + 1} из ${denominator}" aria-pressed="${selected.has(i)}" style="min-width:0;background:var(--${selected.has(i) ? "accent" : "surface"})"><span class="lab-piece-number">${i + 1}</span></button>`).join("");
+      updateReadout();
+    }
+
+    pieces.addEventListener("click", event => {
+      const button = event.target.closest("[data-piece]");
+      if (!button || !pieces.contains(button)) return;
+      const index = Number(button.dataset.piece);
+      if (selected.has(index)) selected.delete(index); else selected.add(index);
+      const isSelected = selected.has(index);
+      button.classList.toggle("is-filled", isSelected);
+      button.setAttribute("aria-pressed", String(isSelected));
+      button.style.background = `var(--${isSelected ? "accent" : "surface"})`;
+      updateReadout();
+      showFeedback(feedback, "", "");
+    });
+    container.querySelector("[data-den]").addEventListener("input", event => {
+      denominator = safeInt(event.target.value, denominator, 2, 12);
+      container.querySelector("[data-den-output]").value = denominator;
+      selected = new Set();
+      renderPieces();
+      showFeedback(feedback, "", "");
+    });
+    container.querySelector("[data-check]").addEventListener("click", () => {
+      const correct = selected.size * 4 === denominator * 3;
+      showFeedback(feedback, correct ? "success" : "error", correct
+        ? `Верно! Закрашено ровно ${h.f(3, 4)} целого.${denominator !== 4 ? " Одну и ту же долю можно изобразить разным числом маленьких частей." : ""}`
+        : `Пока не совпало. Подсказка: раздели целое на <strong>4 равные части</strong> и выбери <strong>3</strong> из них.`);
+    });
+    renderPieces();
+  }
+
+  function mountNumberLine(container, h) {
+    let d = 4;
+    let n = 1;
+    container.innerHTML = `
+      <div class="lab-controls">
+        <label class="lab-control" for="${h.uid}-d"><span>Частей в каждом целом</span><span class="lab-range-row"><input id="${h.uid}-d" data-den type="range" min="2" max="8" step="1" value="4"><output data-den-output for="${h.uid}-d">4</output></span></label>
+        <label class="lab-control" for="${h.uid}-n"><span>Шагов от нуля — числитель</span><span class="lab-range-row"><input id="${h.uid}-n" data-num type="range" min="0" max="8" step="1" value="1"><output data-num-output for="${h.uid}-n">1</output></span></label>
+      </div>
+      <div class="lab-model" data-line></div>
+      <div class="lab-readout" data-readout aria-live="polite" aria-atomic="true"></div>
+      <div class="lab-goal">
+        <div><span class="pill">Твоя цель</span> <strong>Поставь точку в ${h.f(5, 4)}.</strong></div>
+        <button class="btn btn-secondary" data-check type="button">Проверить точку</button>
+        <div class="lab-feedback" data-feedback role="status" aria-live="polite"></div>
+      </div>`;
+    const feedback = container.querySelector("[data-feedback]");
+    const numInput = container.querySelector("[data-num]");
+
+    function render() {
+      numInput.max = 2 * d;
+      numInput.value = n;
+      numInput.setAttribute("aria-valuetext", `${n}; размер шага 1/${d} целого; точка ${n}/${d}`);
+      container.querySelector("[data-den-output]").value = d;
+      container.querySelector("[data-num-output]").value = n;
+      const x = 24 + n / (2 * d) * 352;
+      const ticks = Array.from({ length: 2 * d + 1 }, (_, i) => {
+        const tx = 24 + i / (2 * d) * 352;
+        const major = i % d === 0;
+        return `<line x1="${tx}" x2="${tx}" y1="${major ? 43 : 50}" y2="${major ? 76 : 68}" stroke="var(--ink)" stroke-width="${major ? 2 : 1}"/>${major ? `<text x="${tx}" y="105" text-anchor="middle" fill="var(--ink)" font-size="21" font-weight="650">${i / d}</text>` : ""}`;
+      }).join("");
+      container.querySelector("[data-line]").innerHTML = `<svg class="lab-number-line" viewBox="0 0 400 132" role="img" aria-label="Числовая прямая от нуля до двух. Каждое целое разделено на ${d} равных шагов. Точка стоит в ${n}/${d}." style="width:100%;max-height:210px;display:block;overflow:visible">
+        <line x1="24" x2="381" y1="59" y2="59" stroke="var(--line)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M382 53 L391 59 L382 65" fill="none" stroke="var(--ink)" stroke-width="2"/>
+        <line x1="24" x2="${x}" y1="59" y2="59" stroke="var(--accent)" stroke-width="6"/>
+        ${ticks}<circle cx="${x}" cy="59" r="10" fill="var(--accent)" stroke="var(--surface)" stroke-width="3"/>
+        <text x="${x}" y="26" text-anchor="middle" fill="var(--accent)" font-size="20" font-weight="700">${n}/${d}</text>
+      </svg><p class="model-caption">Один шаг — ${h.f(1, d)} целого. От 0 до 1 и от 1 до 2 — одинаковое расстояние.</p>`;
+      const whole = Math.floor(n / d);
+      const remainder = n % d;
+      let translation;
+      if (n === 0) translation = "0 — ни одного шага.";
+      else if (remainder === 0) translation = `${wholeWords(whole)}: дошли точно до целого числа.`;
+      else if (whole === 0) translation = "Пока меньше одного целого.";
+      else translation = `<span class="lab-mixed">${whole} ${h.f(remainder, d)}</span> — ${wholeWords(whole)} и ещё ${h.f(remainder, d)}. Это смешанная запись.`;
+      container.querySelector("[data-readout]").innerHTML = `<div class="lab-equation">${h.f(n, d)}<span>${translation}</span></div>`;
+    }
+    container.querySelector("[data-den]").addEventListener("input", event => {
+      d = safeInt(event.target.value, d, 2, 8);
+      n = Math.min(n, 2 * d);
+      render();
+      showFeedback(feedback, "", "");
+    });
+    numInput.addEventListener("input", event => {
+      n = safeInt(event.target.value, n, 0, 2 * d);
+      render();
+      showFeedback(feedback, "", "");
+    });
+    container.querySelector("[data-check]").addEventListener("click", () => {
+      const correct = n * 4 === 5 * d;
+      showFeedback(feedback, correct ? "success" : "error", correct
+        ? `Верно: ${h.f(5, 4)} — это одно целое и ещё четверть целого.`
+        : `Нужная точка правее 1. Попробуй разделить каждое целое на <strong>4 части</strong> и пройти от нуля <strong>5 маленьких шагов</strong>.`);
+    });
+    render();
+  }
+
+  function mountEquivalent(container, h) {
+    let n = 1;
+    let d = 2;
+    let factor = 2;
+    container.innerHTML = `
+      <div class="lab-controls">
+        <label class="lab-control" for="${h.uid}-base"><span>Исходная дробь</span><select id="${h.uid}-base" data-base><option value="1,2">1/2 — одна вторая</option><option value="2,3">2/3 — две трети</option><option value="3,4">3/4 — три четверти</option><option value="2,5">2/5 — две пятых</option></select></label>
+        <label class="lab-control" for="${h.uid}-factor"><span>На сколько делим каждую часть</span><span class="lab-range-row"><input id="${h.uid}-factor" data-factor type="range" min="1" max="5" step="1" value="2"><output data-factor-output for="${h.uid}-factor">2</output></span></label>
+      </div>
+      <div class="lab-model" data-view></div>
+      <div class="lab-readout" data-readout aria-live="polite" aria-atomic="true"></div>
+      <div class="callout" data-reverse></div>`;
+
+    function render() {
+      container.querySelector("[data-factor-output]").value = factor;
+      container.querySelector("[data-view]").innerHTML = `<p class="model-caption">Было: ${h.f(n, d)}</p>${pieceStrip(n, d)}
+        <p class="model-caption">${factor === 1 ? "Пока оставили исходные части" : `Каждую часть разделили ещё на ${factor} равных частей`}: ${h.f(n * factor, d * factor)}</p>${pieceStrip(n * factor, d * factor)}
+        <p class="model-caption">Целое и закрашенная доля остались прежними.</p>`;
+      container.querySelector("[data-readout]").innerHTML = `<div class="lab-equation">${h.f(n, d)}<span>=</span>${h.f(n * factor, d * factor)}</div>
+        <p>Числитель: <strong>${n} × ${factor} = ${n * factor}</strong>. Знаменатель: <strong>${d} × ${factor} = ${d * factor}</strong>.</p>`;
+      container.querySelector("[data-reverse]").innerHTML = factor === 1
+        ? `<strong>Попробуй множитель 2 или больше.</strong> Числа в записи изменятся, но доля останется той же.`
+        : `<strong>Можно и обратно — сократить дробь.</strong> Объединим каждые ${factor} маленьких частей: ${n * factor} ÷ ${factor} = ${n}, ${d * factor} ÷ ${factor} = ${d}. Делим <strong>оба числа</strong> на одно и то же число и получаем ${h.f(n, d)}.`;
+    }
+    container.querySelector("[data-base]").addEventListener("change", event => {
+      [n, d] = event.target.value.split(",").map(Number);
+      render();
+    });
+    container.querySelector("[data-factor]").addEventListener("input", event => {
+      factor = safeInt(event.target.value, factor, 1, 5);
+      render();
+    });
+    render();
+  }
+
+  function mountCompare(container, h) {
+    const state = { a: 1, b: 3, c: 1, d: 4 };
+    let showCommon = false;
+    container.innerHTML = `
+      <p class="model-caption">Меняй числа: здесь сравниваем доли от 0 до 1. Оба целых всегда одинаковой длины.</p>
+      <div class="lab-controls lab-compare-controls">
+        <fieldset class="lab-fraction-controls"><legend>Дробь A</legend>
+          <label class="lab-control" for="${h.uid}-a"><span>Числитель A</span><input id="${h.uid}-a" data-field="a" type="number" min="0" max="3" step="1" value="1" inputmode="numeric"></label>
+          <label class="lab-control" for="${h.uid}-b"><span>Знаменатель A</span><input id="${h.uid}-b" data-field="b" type="number" min="1" max="8" step="1" value="3" inputmode="numeric"></label>
+        </fieldset>
+        <fieldset class="lab-fraction-controls"><legend>Дробь B</legend>
+          <label class="lab-control" for="${h.uid}-c"><span>Числитель B</span><input id="${h.uid}-c" data-field="c" type="number" min="0" max="4" step="1" value="1" inputmode="numeric"></label>
+          <label class="lab-control" for="${h.uid}-d"><span>Знаменатель B</span><input id="${h.uid}-d" data-field="d" type="number" min="1" max="8" step="1" value="4" inputmode="numeric"></label>
+        </fieldset>
+      </div>
+      <div class="lab-model" data-view></div>
+      <div class="lab-readout" data-readout aria-live="polite" aria-atomic="true"></div>
+      <div class="lab-toggle-row"><button class="btn btn-secondary" data-common-toggle type="button" aria-expanded="false" aria-controls="${h.uid}-common">Показать общий знаменатель</button></div>
+      <div class="callout" id="${h.uid}-common" data-common hidden></div>`;
+
+    function render() {
+      const { a, b, c, d } = state;
+      const common = h.lcm(b, d);
+      const aa = a * (common / b);
+      const cc = c * (common / d);
+      const relation = a * d === c * b ? "=" : a * d > c * b ? "&gt;" : "&lt;";
+      const relationWords = a * d === c * b ? "равна" : a * d > c * b ? "больше" : "меньше";
+      container.querySelector("[data-view]").innerHTML = `<p class="model-caption"><strong>A</strong> · ${h.f(a, b)}${showCommon ? ` = ${h.f(aa, common)}` : ""}</p>
+        ${continuousStrip(a, b, showCommon ? common : b, "accent", `Дробь A: ${a}/${b} целого.`)}
+        <p class="model-caption"><strong>B</strong> · ${h.f(c, d)}${showCommon ? ` = ${h.f(cc, common)}` : ""}</p>
+        ${continuousStrip(c, d, showCommon ? common : d, "warm", `Дробь B: ${c}/${d} такого же целого.`)}`;
+      let reason;
+      if (a * d === c * b) reason = "Закрашено поровну: записи могут отличаться, а доли равны.";
+      else if (b === d) reason = "Части одинакового размера: где их выбрали больше, там и дробь больше.";
+      else if (a === c && a !== 0) reason = "Взяли одинаковое число частей. При большем знаменателе каждая часть меньше.";
+      else reason = "Сравни длину закрашенных участков. Общий знаменатель поможет проверить это числами.";
+      container.querySelector("[data-readout]").innerHTML = `<div class="lab-equation" role="img" aria-label="${a}/${b} ${relationWords} ${c}/${d}">${h.f(a, b)}<strong class="lab-relation">${relation}</strong>${h.f(c, d)}</div><p>${reason}</p>`;
+      const commonBox = container.querySelector("[data-common]");
+      commonBox.hidden = !showCommon;
+      commonBox.innerHTML = `<strong>Общие маленькие части — ${h.f(1, common)} целого.</strong> В A их ${aa}, в B — ${cc}. Теперь размер частей одинаковый: сравниваем <strong>${aa}</strong> и <strong>${cc}</strong>.`;
+      const toggle = container.querySelector("[data-common-toggle]");
+      toggle.setAttribute("aria-expanded", String(showCommon));
+      toggle.textContent = showCommon ? "Вернуть исходные части" : "Показать общий знаменатель";
+    }
+    container.querySelectorAll("[data-field]").forEach(input => {
+      input.addEventListener("change", event => {
+        const key = event.target.dataset.field;
+        const denominator = key === "a" ? state.b : state.d;
+        state[key] = safeInt(event.target.value, state[key], key === "a" || key === "c" ? 0 : 1, key === "a" || key === "c" ? denominator : 8);
+        state.a = Math.min(state.a, state.b);
+        state.c = Math.min(state.c, state.d);
+        container.querySelectorAll("[data-field]").forEach(control => {
+          control.value = state[control.dataset.field];
+          if (control.dataset.field === "a") control.max = state.b;
+          if (control.dataset.field === "c") control.max = state.d;
+        });
+        render();
+      });
+    });
+    container.querySelector("[data-common-toggle]").addEventListener("click", () => {
+      showCommon = !showCommon;
+      render();
+    });
+    render();
+  }
+
+  function mountOperations(container, h) {
+    const examples = [
+      { a: 1, b: 4, c: 2, d: 4, op: "+", label: "1/4 + 2/4 · одинаковые части" },
+      { a: 1, b: 2, c: 1, d: 3, op: "+", label: "1/2 + 1/3 · разные части" },
+      { a: 3, b: 4, c: 1, d: 4, op: "−", label: "3/4 − 1/4 · убираем часть" },
+      { a: 5, b: 6, c: 1, d: 3, op: "−", label: "5/6 − 1/3 · разные части" },
+      { a: 3, b: 4, c: 3, d: 4, op: "+", label: "3/4 + 3/4 · больше целого" }
+    ];
+    let exampleIndex = 0;
+    let step = 0;
+    container.innerHTML = `
+      <div class="lab-controls"><label class="lab-control" for="${h.uid}-example"><span>Пример для исследования</span><select id="${h.uid}-example" data-example>${examples.map((item, i) => `<option value="${i}">${item.label}</option>`).join("")}</select></label></div>
+      <p class="lab-step-label" data-step-label></p>
+      <div class="lab-model" data-view></div>
+      <div class="lab-readout" data-readout aria-live="polite" aria-atomic="true"></div>
+      <button class="btn" data-next type="button">Разделить на одинаковые части</button>`;
+
+    function render() {
+      const e = examples[exampleIndex];
+      const common = h.lcm(e.b, e.d);
+      const aCommon = e.a * (common / e.b);
+      const cCommon = e.c * (common / e.d);
+      const result = e.op === "+" ? aCommon + cCommon : aCommon - cCommon;
+      const divisor = h.gcd(result, common);
+      const reducedN = result / divisor;
+      const reducedD = common / divisor;
+      const nextButton = container.querySelector("[data-next]");
+      container.querySelector("[data-step-label]").innerHTML = `<span class="pill">Шаг ${step + 1} из 3</span> ${["Посмотри на исходные доли", "Сделай размер частей одинаковым", e.op === "+" ? "Собери все выбранные части" : "Убери нужное число частей"][step]}`;
+      let view;
+      let readout;
+
+      if (step < 2) {
+        const firstN = step === 0 ? e.a : aCommon;
+        const firstD = step === 0 ? e.b : common;
+        const secondN = step === 0 ? e.c : cCommon;
+        const secondD = step === 0 ? e.d : common;
+        view = `<p class="model-caption">Первая доля · ${h.f(e.a, e.b)}${step === 1 && e.b !== common ? ` = ${h.f(aCommon, common)}` : ""}</p>${pieceStrip(firstN, firstD)}
+          <p class="model-caption">${e.op === "+" ? "Добавляем" : "Убираем"} · ${h.f(e.c, e.d)}${step === 1 && e.d !== common ? ` = ${h.f(cCommon, common)}` : ""}</p>${pieceStrip(secondN, secondD, { color: "warm" })}`;
+        readout = `<div class="lab-equation">${h.f(firstN, firstD)}<strong>${e.op}</strong>${h.f(secondN, secondD)}<strong>= ?</strong></div><p>${step === 0
+          ? e.b === e.d ? "Размер частей уже одинаковый. На следующем шаге проверим, что можно их посчитать вместе." : "Половинки, трети и другие доли имеют разный размер. Сначала получим одинаковые маленькие части."
+          : e.op === "+" ? `Теперь считаем части размером 1/${common}: берём ${aCommon} и добавляем ещё ${cCommon}.` : `Теперь считаем части размером 1/${common}: из ${aCommon} убираем ${cCommon}.`}</p>`;
+        nextButton.textContent = step === 0 ? "Разделить на одинаковые части" : "Собрать результат";
+      } else {
+        if (e.op === "+") {
+          const numberOfUnits = Math.max(1, Math.ceil(result / common));
+          view = `<div class="lab-unit-row" style="display:flex;flex-direction:column;gap:16px">${Array.from({ length: numberOfUnits }, (_, unit) => {
+            const colors = Array.from({ length: common }, (_, i) => {
+              const part = unit * common + i;
+              return part < aCommon ? "accent" : part < result ? "warm" : "";
+            });
+            const filled = clamp(result - unit * common, 0, common);
+            return `<div class="lab-unit" style="width:100%"><p class="model-caption">${numberOfUnits > 1 ? `${unit + 1}-е целое` : "Результат в одном целом"}</p>${pieceStrip(filled, common, { colors, label: `Целое ${unit + 1}: выбрано ${filled} из ${common} равных частей.` })}</div>`;
+          }).join("")}</div><p class="model-caption">${numberOfUnits > 1 ? "Каждая полоса — одно целое той же длины. Одной полосы для ответа не хватило." : "Части первой и второй долей собраны вместе."}</p>`;
+        } else {
+          const colors = Array.from({ length: common }, (_, i) => i < result ? "accent" : i < aCommon ? "removed" : "");
+          view = `<p class="model-caption">Осталось ${result} частей; штриховкой отмечены ${cCommon}, которые убрали.</p>${pieceStrip(result, common, { colors, label: `Было ${aCommon} частей из ${common}, убрали ${cCommon}, осталось ${result}. Штрихованные части в результат не входят.` })}`;
+        }
+        let resultExpression = h.f(result, common);
+        if (divisor > 1) resultExpression += `<span>=</span>${reducedD === 1 ? `<strong>${reducedN}</strong>` : h.f(reducedN, reducedD)}`;
+        if (reducedN > reducedD && reducedN % reducedD !== 0) resultExpression += `<span>=</span><span class="lab-mixed">${Math.floor(reducedN / reducedD)} ${h.f(reducedN % reducedD, reducedD)}</span>`;
+        readout = `<div class="lab-equation">${h.f(e.a, e.b)}<strong>${e.op}</strong>${h.f(e.c, e.d)}<span>=</span>${resultExpression}</div>
+          <p>${aCommon} ${e.op} ${cCommon} = <strong>${result}</strong> частей размером ${h.f(1, common)}.${divisor > 1 ? ` Затем сократили дробь: разделили оба числа на ${divisor}.` : ""}</p>
+          <p class="muted">При подсчёте размер части остаётся 1/${common}.${divisor > 1 ? " После сокращения ту же долю записали более крупными частями." : " Поэтому знаменатель результата тот же."}</p>`;
+        nextButton.textContent = "Повторить этот пример";
+      }
+      container.querySelector("[data-view]").innerHTML = view;
+      container.querySelector("[data-readout]").innerHTML = readout;
+    }
+    container.querySelector("[data-example]").addEventListener("change", event => {
+      exampleIndex = safeInt(event.target.value, 0, 0, examples.length - 1);
+      step = 0;
+      render();
+    });
+    container.querySelector("[data-next]").addEventListener("click", () => {
+      step = (step + 1) % 3;
+      render();
+    });
+    render();
+  }
+
+  function mountQuantity(container, h) {
+    const examples = [{ n: 3, d: 4, total: 12 }, { n: 2, d: 3, total: 15 }, { n: 3, d: 5, total: 20 }, { n: 1, d: 6, total: 18 }];
+    let exampleIndex = 0;
+    let selected = new Set();
+    container.innerHTML = `
+      <div class="lab-controls"><label class="lab-control" for="${h.uid}-quantity"><span>Какую часть количества найдём?</span><select id="${h.uid}-quantity" data-example>${examples.map((e, i) => `<option value="${i}">${e.n}/${e.d} от ${e.total}</option>`).join("")}</select></label></div>
+      <p class="model-caption" data-caption></p>
+      <div class="lab-model"><div class="lab-chip-groups" data-groups role="group" aria-label="Равные группы фишек" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(78px,1fr));gap:10px"></div></div>
+      <div class="lab-readout" data-readout aria-live="polite" aria-atomic="true"></div>
+      <div class="lab-goal">
+        <div class="lab-controls"><button class="btn btn-secondary" data-check type="button">Проверить выбранные группы</button><button class="btn btn-secondary" data-reset type="button">Снять выбор</button></div>
+        <div class="lab-feedback" data-feedback role="status" aria-live="polite"></div>
+      </div>
+      <p class="callout"><strong>Два действия:</strong> сначала делим всё количество на знаменатель — узнаём размер одной группы. Потом умножаем на числитель — берём нужное число групп.</p>`;
+    const groups = container.querySelector("[data-groups]");
+    const feedback = container.querySelector("[data-feedback]");
+
+    function renderReadout() {
+      const e = examples[exampleIndex];
+      const perGroup = e.total / e.d;
+      container.querySelector("[data-readout]").innerHTML = `<div class="lab-legend"><span>В одной группе: <strong>${perGroup}</strong> ${chipWord(perGroup)}.</span><span>Выбрано групп: <strong>${selected.size}</strong> из ${e.d}.</span></div>${selected.size
+        ? `<p>В выбранных группах: <strong>${perGroup} × ${selected.size} = ${perGroup * selected.size}</strong> ${chipWord(perGroup * selected.size)}.</p>`
+        : `<p>Нажми на <strong>${e.n}</strong> ${e.n === 1 ? "группу" : "группы"}, чтобы найти ${h.f(e.n, e.d)} от ${e.total}.</p>`}`;
+    }
+
+    function renderGroups() {
+      const e = examples[exampleIndex];
+      const perGroup = e.total / e.d;
+      container.querySelector("[data-caption]").innerHTML = `Целое — <strong>${e.total} фишек</strong>. Мы разделили их на <strong>${e.d} равных групп</strong>. Выбери ${e.n} ${e.n === 1 ? "группу" : "группы"} — это ${h.f(e.n, e.d)} всего количества.`;
+      groups.innerHTML = Array.from({ length: e.d }, (_, i) => `<button class="lab-chip-group${selected.has(i) ? " is-selected" : ""}" data-group="${i}" type="button" aria-pressed="${selected.has(i)}" aria-label="Группа ${i + 1}, ${perGroup} ${chipWord(perGroup)}">
+        <span class="lab-chip-grid" aria-hidden="true" style="display:grid;grid-template-columns:repeat(${Math.min(3, perGroup)},12px);justify-content:center;gap:6px;min-height:30px;align-content:center">${Array.from({ length: perGroup }, () => `<span class="lab-chip" style="display:block;width:12px;height:12px;border-radius:50%;background:currentColor"></span>`).join("")}</span>
+        <span class="lab-group-label">Группа ${i + 1}</span>
+      </button>`).join("");
+      renderReadout();
+    }
+
+    groups.addEventListener("click", event => {
+      const button = event.target.closest("[data-group]");
+      if (!button || !groups.contains(button)) return;
+      const index = Number(button.dataset.group);
+      if (selected.has(index)) selected.delete(index); else selected.add(index);
+      button.classList.toggle("is-selected", selected.has(index));
+      button.setAttribute("aria-pressed", String(selected.has(index)));
+      renderReadout();
+      showFeedback(feedback, "", "");
+    });
+    container.querySelector("[data-example]").addEventListener("change", event => {
+      exampleIndex = safeInt(event.target.value, 0, 0, examples.length - 1);
+      selected = new Set();
+      renderGroups();
+      showFeedback(feedback, "", "");
+    });
+    container.querySelector("[data-reset]").addEventListener("click", () => {
+      selected.clear();
+      renderGroups();
+      showFeedback(feedback, "", "");
+    });
+    container.querySelector("[data-check]").addEventListener("click", () => {
+      const e = examples[exampleIndex];
+      const correct = selected.size === e.n;
+      showFeedback(feedback, correct ? "success" : "error", correct
+        ? `Верно! ${h.f(e.n, e.d)} от ${e.total} — это <strong>${e.total} ÷ ${e.d} × ${e.n} = ${e.total / e.d * e.n}</strong> ${chipWord(e.total / e.d * e.n)}.`
+        : `В каждой группе одинаковое число фишек. Нужно взять <strong>${e.n}</strong> ${e.n === 1 ? "группу" : "группы"}; сейчас выбрано <strong>${selected.size}</strong>.`);
+    });
+    renderGroups();
+  }
+
+  const mounts = [mountParts, mountNumberLine, mountEquivalent, mountCompare, mountOperations, mountQuantity];
+  window.FractionLabs = {
+    mount(lessonIndex, container, helpers) {
+      if (!container || typeof container.querySelector !== "function") throw new TypeError("Нужен DOM-контейнер лаборатории.");
+      const index = Number(lessonIndex);
+      if (!Number.isInteger(index) || !mounts[index]) throw new RangeError("Номер лаборатории должен быть от 0 до 5.");
+      mounts[index](container, makeHelpers(helpers));
+    }
+  };
+})();
+
+  </script>
+  <script>
+/* Optional, dependency-free chapter. Kept separate during authoring; inline for delivery. */
+(function () {
+  'use strict';
+
+  window.FRACTION_BONUS_CSS = `
+    .bonus-root { color: var(--ink, #20342e); }
+    .bonus-root *, .bonus-root *::before, .bonus-root *::after { box-sizing: border-box; }
+    .bonus-root button { font: inherit; }
+    .bonus-mode-switch, .bonus-presets { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1rem 0; }
+    .bonus-mode-switch button, .bonus-presets button { border: 1px solid var(--line, #d5ded8); border-radius: 12px; padding: .65rem .9rem; color: var(--ink, #20342e); background: var(--surface, #fff); cursor: pointer; }
+    .bonus-mode-switch button[aria-pressed="true"] { background: var(--ink, #20342e); color: var(--surface, #fff); border-color: var(--ink, #20342e); }
+    .bonus-presets button[aria-pressed="true"] { background: var(--accent-soft, #e4eee3); border-color: var(--accent, #326950); box-shadow: inset 0 0 0 1px var(--accent, #326950); }
+    .bonus-root button:focus-visible, .bonus-root summary:focus-visible { outline: 3px solid var(--accent, #326950); outline-offset: 4px; }
+    .bonus-intro { max-width: 66ch; line-height: 1.65; }
+    .bonus-lab { padding: clamp(1rem, 3vw, 1.75rem); border: 1px solid var(--line, #d5ded8); border-radius: 18px; background: var(--surface, #fff); }
+    .bonus-lab h4 { margin: 0 0 .6rem; font-size: 1.12rem; }
+    .bonus-grid { display: grid; width: min(100%, 490px); height: clamp(180px, 30vw, 270px); margin: 1.2rem auto; border: 2px solid var(--ink, #20342e); border-radius: 9px; overflow: hidden; background: var(--surface, #fff); gap: 2px; }
+    .bonus-grid-cell { background: var(--surface, #fff); outline: 1px solid var(--line, #d5ded8); display: flex; justify-content: center; align-items: center; color: var(--ink, #20342e); font-size: 1.15rem; }
+    .bonus-source { background-color: var(--accent-soft, #e4eee3); background-image: repeating-linear-gradient(135deg, transparent, transparent 8px, rgba(40,100,70,.16) 8px, rgba(40,100,70,.16) 10px); }
+    .bonus-grid-cell.bonus-chosen { background: var(--warm-soft, #ffdfb3); outline: 1px solid var(--warm, #b36d27); font-weight: 800; }
+    .bonus-legend { display: flex; flex-wrap: wrap; gap: .6rem 1.1rem; margin: .7rem 0; font-size: .88rem; line-height: 1.5; }
+    .bonus-legend span { display: inline-flex; align-items: center; gap: .4rem; }
+    .bonus-swatch { display: inline-block; width: 18px; height: 18px; border: 1px solid var(--line, #d5ded8); border-radius: 4px; flex: 0 0 auto; }
+    .bonus-swatch.bonus-taken { background: var(--warm-soft, #ffdfb3); border-color: var(--warm, #b36d27); }
+    .bonus-action { margin-top: 1rem; }
+    .bonus-action .btn { cursor: pointer; }
+    .bonus-result { margin-top: 1.2rem; padding: 1rem 1.2rem; border-radius: 14px; background: var(--accent-soft, #e4eee3); line-height: 1.65; }
+    .bonus-result.bonus-division-result { padding: 1rem 0; border-top: 1px solid var(--line, #d5ded8); border-radius: 0; background: transparent; }
+    .bonus-result p { margin: .5rem 0; }
+    .bonus-equation { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; font-size: 1.35rem; font-weight: 650; line-height: 1.8; }
+    .bonus-steps { line-height: 1.65; padding-left: 1.25rem; }
+    .bonus-steps li + li { margin-top: .35rem; }
+    .bonus-caption { font-size: .92rem; line-height: 1.6; }
+    .bonus-bars { max-width: 630px; margin: 1.25rem auto .5rem; }
+    .bonus-bar-label { margin: .95rem 0 .45rem; font-size: .93rem; line-height: 1.5; }
+    .bonus-strip { display: grid; height: 56px; border: 2px solid var(--ink, #20342e); border-radius: 8px; overflow: hidden; background: var(--surface, #fff); }
+    .bonus-segment { display: flex; align-items: center; justify-content: center; min-width: 0; border-right: 1px solid var(--line, #d5ded8); font-weight: 750; color: var(--ink, #20342e); }
+    .bonus-segment:last-child { border-right: 0; }
+    .bonus-segment.bonus-unit-end:not(:last-child) { border-right: 3px solid var(--ink, #20342e); }
+    .bonus-have { background: var(--accent-soft, #e4eee3); }
+    .bonus-portion { background: var(--warm-soft, #ffdfb3); }
+    .bonus-measured { background: var(--warm-soft, #ffdfb3); border-right: 2px solid var(--warm, #b36d27); }
+    .bonus-axis { display: flex; justify-content: space-between; margin: .28rem 0 .8rem; font-size: .82rem; color: var(--muted, #5b6d64); }
+    .bonus-measure-track { position: relative; margin-top: .65rem; }
+    .bonus-measure-track .bonus-strip { height: 62px; border-color: var(--warm, #b36d27); }
+    .bonus-unfilled { background-image: repeating-linear-gradient(135deg, transparent, transparent 8px, rgba(165,115,45,.13) 8px, rgba(165,115,45,.13) 10px); }
+    .bonus-rule { margin-top: .9rem; padding-top: .85rem; border-top: 1px solid var(--line, #d5ded8); }
+    .bonus-rule summary { cursor: pointer; font-weight: 650; }
+    .bonus-rule p { font-size: .94rem; }
+    .bonus-fallback-fraction { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; line-height: 1.1; font-size: .95em; margin: 0 .12em; }
+    .bonus-fallback-fraction > span:first-child { border-bottom: 1.5px solid currentColor; padding: 0 .2em .1em; }
+    .bonus-fallback-fraction > span:last-child { padding-top: .1em; }
+    .bonus-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    @media (max-width: 480px) { .bonus-mode-switch button { flex: 1 1 135px; } .bonus-presets button { flex: 1 1 95px; padding: .6rem; } .bonus-lab { padding: 1rem; } .bonus-result { padding: .85rem; } .bonus-equation { font-size: 1.17rem; } }
+  `;
+
+  var nextId = 0;
+
+  window.FractionBonus = {
+    mount: function (container, helpers) {
+      if (!container || typeof container.replaceChildren !== 'function') return;
+      helpers = helpers || {};
+      var frac = typeof helpers.frac === 'function' ? helpers.frac : function (n, d) {
+        return '<span class="bonus-fallback-fraction" aria-label="' + n + ' / ' + d + '"><span>' + n + '</span><span>' + d + '</span></span>';
+      };
+      var gcd = typeof helpers.gcd === 'function' ? helpers.gcd : function (a, b) {
+        while (b) { var t = b; b = a % b; a = t; }
+        return Math.abs(a);
+      };
+      var id = 'fraction-bonus-' + (++nextId);
+      var state = { mode: 'multiply', multiply: 0, divide: 0, revealed: false };
+      var mulPresets = [
+        { takeN: 1, takeD: 2, sourceN: 3, sourceD: 4 },
+        { takeN: 2, takeD: 3, sourceN: 3, sourceD: 5 },
+        { takeN: 3, takeD: 4, sourceN: 2, sourceD: 3 }
+      ];
+      var divPresets = [
+        { n: 3, d: 4, pn: 1, pd: 4, unitD: 4, wholes: 1, have: 3, portion: 1 },
+        { n: 3, d: 2, pn: 1, pd: 2, unitD: 2, wholes: 2, have: 3, portion: 1 },
+        { n: 1, d: 2, pn: 3, pd: 4, unitD: 4, wholes: 1, have: 2, portion: 3 }
+      ];
+      var root = document.createElement('div');
+      root.className = 'bonus-root';
+      root.innerHTML = '<div class="bonus-content"></div><p class="bonus-sr-only" role="status" aria-live="polite" aria-atomic="true"></p>';
+      container.replaceChildren(root);
+      var content = root.querySelector('.bonus-content');
+      var status = root.querySelector('[role="status"]');
+
+      function f(n, d) { return d === 1 ? String(n) : frac(n, d); }
+      function simple(n, d) { var g = gcd(n, d); return f(n / g, d / g); }
+      function spoken(n, d) { return n + '/' + d; }
+      function modeButtons() {
+        return '<div class="bonus-mode-switch" role="group" aria-label="Выбрать действие">' +
+          '<button type="button" data-mode="multiply" aria-pressed="' + (state.mode === 'multiply') + '" aria-controls="' + id + '-lab">Часть от части</button>' +
+          '<button type="button" data-mode="divide" aria-pressed="' + (state.mode === 'divide') + '" aria-controls="' + id + '-lab">Измеряем порциями</button></div>';
+      }
+      function presetButtons() {
+        var isMul = state.mode === 'multiply';
+        var arr = isMul ? mulPresets : divPresets;
+        return '<div class="bonus-presets" role="group" aria-label="Выбрать пример">' + arr.map(function (p, index) {
+          var label = isMul ? spoken(p.takeN, p.takeD) + ' от ' + spoken(p.sourceN, p.sourceD) : spoken(p.n, p.d) + ' : ' + spoken(p.pn, p.pd);
+          return '<button type="button" data-preset="' + index + '" aria-pressed="' + (state[state.mode] === index) + '" aria-controls="' + id + '-lab">' + label + '</button>';
+        }).join('') + '</div>';
+      }
+      function multiplication() {
+        var p = mulPresets[state.multiply];
+        var n = p.takeN * p.sourceN;
+        var d = p.takeD * p.sourceD;
+        var g = gcd(n, d);
+        var cells = '';
+        for (var row = 0; row < p.takeD; row++) {
+          for (var col = 0; col < p.sourceD; col++) {
+            var source = col < p.sourceN;
+            var chosen = source && row < p.takeN && state.revealed;
+            cells += '<span class="bonus-grid-cell' + (source ? ' bonus-source' : '') + (chosen ? ' bonus-chosen' : '') + '">' + (chosen ? '●' : '') + '</span>';
+          }
+        }
+        var description = 'Прямоугольник — одно целое. ' + p.takeD + ' рядов и ' + p.sourceD + ' столбцов: всего ' + d + ' равных клеток. Исходная доля занимает ' + p.sourceN + ' из ' + p.sourceD + ' столбцов.';
+        if (state.revealed) description += ' Выбрано ' + p.takeN + ' из ' + p.takeD + ' рядов внутри исходной доли: ' + n + ' из ' + d + ' клеток целого.';
+        var result = '';
+        if (state.revealed) {
+          result = '<div class="bonus-result"><p><strong>Получилось ' + n + ' из ' + d + ' равных клеток целого.</strong></p>' +
+            '<div class="bonus-equation">' + frac(p.takeN, p.takeD) + '<span>×</span>' + frac(p.sourceN, p.sourceD) + '<span>=</span>' + frac(n, d) + (g > 1 ? '<span>=</span>' + simple(n, d) : '') + '</div>' +
+            (g > 1 ? '<p>Сокращаем дробь: делим и числитель, и знаменатель на <strong>' + g + '</strong>. Количество остаётся прежним.</p>' : '<p>Эту дробь уже нельзя сократить: у числителя и знаменателя нет общего делителя больше 1.</p>') +
+            '<p><strong>Теперь правило понятно:</strong> чтобы взять дробь от дроби, перемножаем числители и перемножаем знаменатели. На сетке знаменатели задают число всех клеток, а числители — число выбранных клеток.</p></div>';
+        }
+        return '<p class="bonus-intro">Мы умеем брать часть целого. А теперь возьмём <strong>часть от уже взятой части</strong>. Это поможет понять умножение дробей.</p>' + presetButtons() +
+          '<div class="bonus-lab" id="' + id + '-lab"><h4>Возьмём ' + frac(p.takeN, p.takeD) + ' от ' + frac(p.sourceN, p.sourceD) + '</h4>' +
+          '<ol class="bonus-steps"><li>Весь прямоугольник — <strong>одно целое</strong>. Полосами отмечены ' + p.sourceN + ' из ' + p.sourceD + ' столбцов: это исходная доля ' + frac(p.sourceN, p.sourceD) + '.</li>' +
+          '<li>Она разделена на ' + p.takeD + ' равных горизонтальных рядов. Берём ' + p.takeN + ' из этих ' + p.takeD + ' рядов <strong>только внутри полосатой области</strong>.</li></ol>' +
+          '<div role="img" aria-label="' + description + '"><div class="bonus-grid" aria-hidden="true" style="grid-template-columns:repeat(' + p.sourceD + ',1fr);grid-template-rows:repeat(' + p.takeD + ',1fr)">' + cells + '</div></div>' +
+          '<div class="bonus-legend" aria-label="Обозначения"><span><i class="bonus-swatch bonus-source" aria-hidden="true"></i>Исходная доля</span><span><i class="bonus-swatch bonus-taken" aria-hidden="true"></i>Взятая часть •</span></div>' +
+          '<p class="model-caption bonus-caption">' + (state.revealed ? 'Точки отмечают результат. И окрашенные клетки, и белые клетки имеют одинаковую площадь.' : 'Все ' + d + ' клеток одинаковые. После шага посчитай клетки с точками и сравни их со всем прямоугольником.') + '</p>' +
+          '<div class="bonus-action"><button class="btn' + (state.revealed ? ' btn-secondary' : '') + '" type="button" data-action="reveal">' + (state.revealed ? 'Показать исходную долю' : 'Взять долю от доли') + '</button></div>' + result + '</div>';
+      }
+      function axis(p) {
+        var out = '';
+        for (var i = 0; i <= p.wholes; i++) out += '<span>' + i + '</span>';
+        return '<div class="bonus-axis" aria-hidden="true">' + out + '</div>';
+      }
+      function bar(p, filled, kind, labelNumbers) {
+        var total = p.unitD * p.wholes;
+        var out = '';
+        for (var i = 0; i < total; i++) {
+          out += '<span class="bonus-segment' + (i < filled ? ' bonus-' + kind : '') + ((i + 1) % p.unitD === 0 ? ' bonus-unit-end' : '') + '">' + (labelNumbers && i < filled ? (i + 1) : '') + '</span>';
+        }
+        return '<div class="bonus-strip" aria-hidden="true" style="grid-template-columns:repeat(' + total + ',1fr)">' + out + '</div>' + axis(p);
+      }
+      function division() {
+        var p = divPresets[state.divide];
+        var ansN = p.n * p.pd;
+        var ansD = p.d * p.pn;
+        var result = '';
+        var haveLabel = frac(p.n, p.d) + (p.n > p.d ? ' = 1 ' + frac(1, 2) : '');
+        if (state.revealed) {
+          var fitting;
+          if (p.portion === 1) {
+            fitting = '<p><strong>В имеющемся количестве помещаются 3 полные порции.</strong> Остатка нет. Числа в полосе — номера порций.</p>' +
+              '<div class="bonus-bars" role="img" aria-label="Три порции, каждая по ' + spoken(p.pn, p.pd) + ' целого, вместе составляют ' + spoken(p.n, p.d) + ' целого.">' + bar(p, p.have, 'measured', true) + '</div>';
+          } else {
+            fitting = '<p><strong>Целой мерки не набирается — получаем часть мерки.</strong> Мерка занимает 3 четверти целого. Наше количество занимает 2 четверти: это <strong>2 из 3 равных частей мерки</strong>.</p>' +
+              '<div class="bonus-bars"><p class="bonus-bar-label">Ниже рамка — <strong>одна мерка</strong>, то есть ' + frac(3, 4) + ' исходного целого. Её масштаб тот же, что у полос выше.</p>' +
+              '<div class="bonus-measure-track" role="img" aria-label="Мерка размером три четверти целого поделена на три равные части. Заполнены две части из трёх. Это две трети мерки.">' +
+              '<div class="bonus-strip" aria-hidden="true" style="width:calc(75% + 1px);grid-template-columns:repeat(3,1fr)"><span class="bonus-segment bonus-portion">●</span><span class="bonus-segment bonus-portion">●</span><span class="bonus-segment bonus-unfilled"></span></div></div>' +
+              '<p class="model-caption bonus-caption">Заполнено ' + frac(2, 3) + ' <strong>мерки</strong>. Это всё те же ' + frac(1, 2) + ' исходного целого: изменилось то, чем мы измеряем.</p></div>';
+          }
+          result = '<div class="bonus-result bonus-division-result">' + fitting + '<div class="bonus-equation">' + frac(p.n, p.d) + '<span>:</span>' + frac(p.pn, p.pd) + '<span>=</span>' + simple(ansN, ansD) + '</div>' +
+            '<p>Ответ показывает, <strong>сколько порций</strong> содержится в нашем количестве. Он может быть целым числом или дробью.</p>' +
+            '<details class="bonus-rule"><summary>Как это записать коротким правилом?</summary><p>Деление на дробь можно заменить умножением на перевёрнутую дробь: её числитель и знаменатель меняются местами.</p>' +
+            '<div class="bonus-equation">' + frac(p.n, p.d) + '<span>:</span>' + frac(p.pn, p.pd) + '<span>=</span>' + frac(p.n, p.d) + '<span>×</span>' + f(p.pd, p.pn) + '<span>=</span>' + frac(ansN, ansD) + '<span>=</span>' + simple(ansN, ansD) + '</div>' +
+            '<p>Но сначала полезно задать смысловой вопрос: «Сколько таких мерок помещается в имеющемся количестве?»</p></details></div>';
+        }
+        return '<p class="bonus-intro"><strong>Деление — это ещё и измерение.</strong> Например, можно узнать, сколько порций заданного размера содержится в имеющемся количестве. Размер целого в обеих полосах одинаков.</p>' + presetButtons() +
+          '<div class="bonus-lab" id="' + id + '-lab"><h4>Сколько порций по ' + frac(p.pn, p.pd) + ' в ' + frac(p.n, p.d) + '?</h4>' +
+          '<div class="bonus-bars"><p class="bonus-bar-label"><strong>Есть:</strong> ' + haveLabel + ' целого</p>' +
+          '<div role="img" aria-label="Имеется ' + spoken(p.n, p.d) + ' целого. Вся шкала от нуля до ' + p.wholes + '.">' + bar(p, p.have, 'have', false) + '</div>' +
+          '<p class="bonus-bar-label"><strong>Одна порция (мерка):</strong> ' + frac(p.pn, p.pd) + ' целого</p>' +
+          '<div role="img" aria-label="Одна порция занимает ' + spoken(p.pn, p.pd) + ' целого. Масштаб такой же, как у имеющегося количества.">' + bar(p, p.portion, 'portion', false) + '</div></div>' +
+          '<p class="model-caption bonus-caption">Чёрные границы и числа показывают целые. Одна маленькая клетка — ' + frac(1, p.unitD) + ' целого.</p>' +
+          '<div class="bonus-action"><button class="btn' + (state.revealed ? ' btn-secondary' : '') + '" type="button" data-action="reveal">' + (state.revealed ? 'Спрятать измерение' : 'Измерить порцией') + '</button></div>' + result + '</div>';
+      }
+      function render(focusSelector) {
+        content.innerHTML = modeButtons() + (state.mode === 'multiply' ? multiplication() : division());
+        if (focusSelector) {
+          var target = content.querySelector(focusSelector);
+          if (target) target.focus({ preventScroll: true });
+        }
+      }
+      root.addEventListener('click', function (event) {
+        var button = event.target.closest('button');
+        if (!button || !root.contains(button)) return;
+        if (button.hasAttribute('data-mode')) {
+          var mode = button.getAttribute('data-mode');
+          if (mode !== 'multiply' && mode !== 'divide') return;
+          state.mode = mode;
+          state.revealed = false;
+          render('[data-mode="' + mode + '"]');
+          status.textContent = mode === 'multiply' ? 'Открыта часть от части. Выберите пример и возьмите долю.' : 'Открыто измерение порциями. Сравните количество с одной порцией.';
+        } else if (button.hasAttribute('data-preset')) {
+          var index = Number(button.getAttribute('data-preset'));
+          if (!Number.isInteger(index) || index < 0 || index > 2) return;
+          state[state.mode] = index;
+          state.revealed = false;
+          render('[data-preset="' + index + '"]');
+          status.textContent = 'Выбран пример ' + (index + 1) + '. Модель возвращена в исходное состояние.';
+        } else if (button.getAttribute('data-action') === 'reveal') {
+          state.revealed = !state.revealed;
+          render('[data-action="reveal"]');
+          if (!state.revealed) status.textContent = 'Модель возвращена в исходное состояние.';
+          else if (state.mode === 'multiply') {
+            var p = mulPresets[state.multiply];
+            var n = p.takeN * p.sourceN;
+            var d = p.takeD * p.sourceD;
+            var g = gcd(n, d);
+            status.textContent = 'Выбрано ' + n + ' из ' + d + ' клеток. Результат: ' + (n / g) + '/' + (d / g) + ' целого.';
+          } else status.textContent = state.divide === 2 ? 'Половина целого заполняет две из трёх равных частей мерки. Результат — две трети мерки.' : 'Измерение завершено: три полные порции, без остатка.';
+        }
+      });
+      render();
+      return { destroy: function () { if (root.parentNode === container) root.remove(); } };
+    }
+  };
+})();
+
+  </script>
+  <script>
+  (() => {
+    'use strict';
+    const $ = (selector, root = document) => root.querySelector(selector);
+    const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+    const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const gcd = (a,b) => {a = Math.abs(a);b = Math.abs(b);while(b){const t = b;b = a % b;a = t;}return a || 1;};
+    const lcm = (a,b) => Math.abs(a*b)/gcd(a,b);
+    const frac = (n,d) => `<span class="fraction" role="math" aria-label="${esc(n)} разделить на ${esc(d)}"><span class="num" aria-hidden="true">${esc(n)}</span><span class="den" aria-hidden="true">${esc(d)}</span></span>`;
+    const simple = (n,d) => {const g=gcd(n,d);n/=g;d/=g;return d===1 ? String(n) : frac(n,d);};
+    const fmt = text => String(text).replace(/(?<![\w"=])\b(\d{1,3})\/(\d{1,3})\b/g, (_,n,d)=>frac(n,d));
+    const lessons = [
+      {nav:'Целое и части',sub:'Как появляется дробь',title:'Целое можно разделить.',lead:'Одного целого иногда слишком много, а нуля — слишком мало. Дроби помогают точно назвать то, что находится между ними.',tag:'С нуля',labTitle:'Собери свою дробь',labGuide:'Раздели полоску на равные части и нажимай на них, чтобы закрасить.',core:`Представь одну шоколадку. Если разделить её на <strong>4 равные части</strong> и взять 3, получится ${frac(3,4)} шоколадки. Читается: <strong>«три четверти»</strong>.`,insight:'Доли должны быть <strong>равными по размеру</strong>. Три любых кусочка из четырёх ещё не означают три четверти.',theory:`<p><strong>Целое</strong> — то, что мы приняли за одну единицу: шоколадка, метр, час или весь набор предметов. Сначала договорись, что именно считаешь целым.</p><div class="definition-row"><div><strong>Знаменатель — внизу</strong><small>На сколько равных долей разделили целое. В дроби 3/4 это 4.</small></div><div><strong>Числитель — вверху</strong><small>Сколько таких долей взяли. В дроби 3/4 это 3.</small></div></div><p>Черта дроби связана с делением: <strong>1/4 = 1 : 4</strong>, а <strong>3/4 = 3 : 4</strong>. Три четверти одной шоколадки — столько же, сколько получит каждый, если три одинаковые шоколадки поровну разделить на четверых.</p><p>Делить на ноль нельзя, поэтому <strong>знаменатель не бывает равен нулю</strong>. В этом уроке знаменатели — положительные целые числа.</p><p>Названия: 1/2 — «одна вторая» или «половина»; 1/3 — «одна треть»; 1/4 — «одна четверть»; 2/5 — «две пятых».</p>`},
+      {nav:'Дробь — это число',sub:'От нуля и дальше',title:'У дроби есть своё место.',lead:'Дробь — не только закрашенный кусочек. Это число: его можно поставить на прямую, а потом сравнить с другими.',labTitle:'Прогулка по числовой прямой',labGuide:'Один шаг равен одной доле. Двигай точку и попробуй перейти через единицу.',core:`Отрезок от <strong>0 до 1</strong> — одно целое. Если разбить его на 4 равных шага, после трёх шагов окажешься в точке ${frac(3,4)}, а после пяти — в ${frac(5,4)}.`,insight:'Дробь может быть <strong>меньше единицы, равна ей или больше неё</strong>. Числитель не обязан быть меньше знаменателя.',theory:`<p>Если взяли ноль долей, получили <strong>0/4 = 0</strong>. Если взяли все четыре четверти, получили <strong>4/4 = 1</strong>.</p><p>После единицы доли не заканчиваются. Пять четвертей — это четыре четверти и ещё одна: <strong>5/4 = 1 + 1/4</strong>. Короткая запись <strong>1 1/4</strong> читается «одна целая одна четверть». Это <strong>смешанное число</strong>.</p><div class="definition-row"><div><strong>Правильная дробь</strong><small>Числитель меньше знаменателя. Например, 3/4 &lt; 1.</small></div><div><strong>Неправильная дробь</strong><small>Числитель не меньше знаменателя. Например, 4/4 = 1 или 5/4 &gt; 1.</small></div></div><p>Слово «неправильная» — название вида дроби, <strong>не ошибка в записи</strong>. На прямой больше то число, которое расположено правее.</p>`},
+      {nav:'Разные записи',sub:'Равенство и сокращение',title:'Запись меняется. Доля — нет.',lead:'Половину можно назвать двумя четвертями или тремя шестыми. Кусочки становятся мельче, но количество шоколада не меняется.',labTitle:'Разрежь каждую долю ещё раз',labGuide:'Выбери дробь и посмотри, что происходит при дополнительном делении на равные части.',core:`Если каждую половину разрезать надвое, половина превратится в две четверти: ${frac(1,2)} = ${frac(2,4)}. Обе дроби называют <strong>одно и то же число</strong>.`,insight:'Чтобы сохранить значение дроби, <strong>умножай или дели оба её числа на одно и то же ненулевое число</strong>. При таком преобразовании работай с числителем и знаменателем вместе. Дробь <strong>несократимая</strong>, если оба числа уже нельзя разделить без остатка на одно целое число больше 1.',theory:`<p>В этом уроке будем умножать числитель и знаменатель на одно и то же <strong>положительное целое число</strong>. Так получаются равные дроби: <strong>2/3 = 4/6 = 6/9</strong>.</p><p>Можно идти обратно и объединять мелкие доли. Если числитель и знаменатель делятся на одно целое число больше 1 <strong>без остатка</strong>, делим оба. Это называется <strong>сокращением</strong>.</p><div class="equation">${frac(6,8)} = ${frac('6 : 2','8 : 2')} = ${frac(3,4)}</div><p>У 3 и 4 больше нет общего делителя, кроме 1, поэтому дробь 3/4 <strong>несократимая</strong>. При сокращении уменьшаются числа в записи, а значение дроби сохраняется.</p><p>Проверь себя на модели: правый край закрашенной области должен остаться на месте.</p>`},
+      {nav:'Кто больше?',sub:'Сравниваем доли',title:'Сравнивай размер, а не цифры.',lead:'Пятая часть меньше третьей: одно и то же целое поделили на большее число кусочков. Большая цифра внизу не делает дробь больше.',labTitle:'Две дроби, одинаковые целые',labGuide:'Меняй дроби и сравнивай закрашенные длины. Затем включи общие доли.',core:`Для ${frac(2,7)} и ${frac(5,7)} доли одинаковые — больше там, где их больше. А для ${frac(1,3)} и ${frac(1,5)} взяли по одной доле — больше <strong>сама треть</strong>.`,insight:'Если знаменатели разные, попробуй <strong>выразить обе дроби в одинаковых долях</strong>. Например, 1/2 = 3/6, а 2/3 = 4/6, поэтому 1/2 &lt; 2/3.',theory:`<p><strong>Одинаковые знаменатели:</strong> сравни числители. Например, 5/8 &gt; 3/8.</p><p><strong>Одинаковые положительные числители:</strong> меньше знаменатель — больше дробь. Например, 2/3 &gt; 2/5. Для нулевых числителей дроби равны нулю.</p><p><strong>Разные числители и знаменатели:</strong> найди общий знаменатель — число, на которое можно разделить каждое целое так, чтобы выразить обе дроби. Для 3/4 и 2/3 подойдёт 12: <strong>3/4 = 9/12</strong>, <strong>2/3 = 8/12</strong>.</p><p>Есть и ориентиры: ноль, половина, единица. Например, 7/8 явно больше половины, а 2/5 меньше половины.</p><p><strong>Следи за целым.</strong> Половина большого пирога может быть больше трёх четвертей маленького. Как числа 1/2 &lt; 3/4; количество пирога зависит ещё и от размера целого.</p>`},
+      {nav:'Складываем доли',sub:'Сложение и вычитание',title:'Сначала назови одинаковые части.',lead:'Три яблока и два яблока дают пять яблок. С дробями похожая идея: сначала нужны части одного размера.',labTitle:'Приведи к общим долям и посчитай',labGuide:'Выбери пример. Сначала получи одинаковые доли, затем собери результат.',core:`Одна четверть и две четверти — это три четверти: ${frac(1,4)} + ${frac(2,4)} = ${frac(3,4)}. <strong>Считаем четверти, поэтому знаменатель остаётся 4.</strong>`,insight:'Не складывай знаменатели. Для разных долей сначала нужен <strong>общий знаменатель</strong>: 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Произведение исходных знаменателей всегда подходит; иногда можно найти меньшее число.',theory:`<p><strong>Одинаковые знаменатели:</strong> сложи или вычти числители, а знаменатель сохрани. Например, <strong>5/7 − 2/7 = 3/7</strong>.</p><p><strong>Разные знаменатели:</strong> найди одинаковые доли, запиши равные исходным дроби и только потом считай. Для 1/3 + 1/4 удобно взять двенадцатые:</p><div class="equation">${frac(1,3)} + ${frac(1,4)} = ${frac(4,12)} + ${frac(3,12)} = ${frac(7,12)}</div><p>Произведение знаменателей всегда подходит как общий знаменатель, но иногда есть меньшее число. Для 1/4 и 1/6 подойдёт <strong>12</strong>, хотя 24 тоже верно.</p><p>Результат можно сократить — так запись станет короче. В заданиях подходят любые равные дроби. Если он больше единицы, его можно оставить неправильной дробью или записать смешанным числом: <strong>6/4 = 3/2 = 1 1/2</strong>.</p><p>В примерах этого урока при вычитании результат неотрицательный. С отрицательными числами можно познакомиться отдельно.</p>`},
+      {nav:'Часть от количества',sub:'Применяем в задачах',title:'Доля умеет считать предметы.',lead:'Целым может быть набор: двенадцать фишек, двадцать книг или весь маршрут. Дробь подсказывает, какую часть этого количества взять.',labTitle:'Раздели поровну, выбери группы',labGuide:'Выбери задачу и нажимай на равные группы. Каждая группа — одна доля набора.',core:`Найти ${frac(3,4)} от 12 — значит <strong>разделить 12 на 4 равные группы</strong>, а затем взять <strong>3 такие группы</strong>.`,insight:'Знаменатель подсказывает, <strong>на сколько разделить</strong>, числитель — <strong>сколько получившихся долей взять</strong>.',theory:`<p>Для 3/4 от 12 сначала вычисли <strong>12 : 4 = 3</strong> предмета в одной четверти, потом <strong>3 × 3 = 9</strong> предметов в трёх четвертях.</p><p>Для 2/5 от 20: <strong>20 : 5 × 2 = 8</strong>. Во всех моделях с фишками количество делится на знаменатель без остатка: отдельные фишки разрезать не нужно.</p><p><strong>Задача наоборот:</strong> если 3/4 числа — это 12, то одна четверть равна <strong>12 : 3 = 4</strong>, а всё число — <strong>4 × 4 = 16</strong>.</p><p>Помогает вопрос: «Что сейчас дано — целое или его часть?» Для поиска части делим на знаменатель, а для восстановления целого из известной доли сначала делим на числитель.</p>`},
+      {nav:'Шаг дальше',sub:'Умножение и деление',title:'Возьми часть от части.',lead:'Необязательный следующий шаг. Когда смысл дробей уже понятен, умножение и деление тоже можно увидеть на рисунке.',tag:'Дополнительно',labTitle:'Два новых действия — два смысла',labGuide:'Начни с доли от доли. Потом узнай, сколько порций одного размера помещается в другой величине.',core:`Половина от трёх четвертей — это ${frac(1,2)} × ${frac(3,4)}. А вопрос «сколько четвертей в трёх четвертях?» записывается как ${frac(3,4)} : ${frac(1,4)}.`,insight:'Умножение на положительную дробь меньше 1 <strong>уменьшает положительное число</strong>. Деление на такую дробь увеличивает его: мелких порций помещается больше.',theory:`<p><strong>Умножение.</strong> Если взять половину от трёх четвертей, целое удобно разбить на восемь клеток. Получатся три клетки: <strong>1/2 × 3/4 = 3/8</strong>.</p><p>Из модели получается правило: <strong>числители перемножаем, знаменатели перемножаем</strong>. Например, 2/3 × 3/5 = 6/15 = 2/5.</p><p><strong>Деление.</strong> Вопрос «сколько порций по 1/4 содержится в 3/4?» имеет ответ 3: <strong>3/4 : 1/4 = 3</strong>.</p><p>Чтобы разделить на ненулевую дробь, можно умножить на <strong>обратную</strong>: поменять местами числитель и знаменатель второй дроби. Например, <strong>3/4 : 1/2 = 3/4 × 2/1 = 3/2</strong>. Первая дробь при этом остаётся прежней.</p><p>Ответ при делении тоже может быть дробным. В половине литра содержится <strong>2/3 порции</strong> объёмом 3/4 литра. Делить на ноль нельзя, в том числе на дробь с нулевым числителем.</p>`}
+    ];
+    const questions = window.FRACTION_QUESTIONS || [];
+    const STORAGE_KEY = 'fractions-laboratory-v1';
+    let storageWorks = true;
+    let state = {chapter:0, records:{}, cursor:{}};
+    try {const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');if(raw && typeof raw==='object'){state.chapter=Number.isInteger(raw.chapter)&&raw.chapter>=0&&raw.chapter<=7?raw.chapter:0;state.records=raw.records&&typeof raw.records==='object'&&!Array.isArray(raw.records)?raw.records:{};state.cursor=raw.cursor&&typeof raw.cursor==='object'&&!Array.isArray(raw.cursor)?raw.cursor:{};}}catch {storageWorks=false;}
+    let trainer = {topic:'mixed', count:0, task:null, record:{}};
+    let previousFocus = null;
+    const reducedMotion = () => window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch{storageWorks=false;updateStorageNote();}}
+    function updateStorageNote(){const node=$('#storage-note');if(node)node.textContent=storageWorks?'Прогресс сохраняется в этом браузере.':'Прогресс доступен до закрытия страницы: браузер не разрешил сохранение.';}
+    function getRecord(id){const record=state.records[id];if(record && typeof record==='object'&&!Array.isArray(record))return record;return (state.records[id]={});}
+    function chapterQuestions(index){return questions.filter(q=>q.lesson===index);}
+    function isChapterDone(index){const qs=chapterQuestions(index);return qs.length>0&&qs.every(q=>getRecord(q.id).solved===true);}
+    function doneCount(){return lessons.slice(0,6).filter((_,i)=>isChapterDone(i)).length;}
+    function renderNav(){
+      $('#chapter-nav').innerHTML=lessons.map((lesson,i)=>`${i===6?'<div class="nav-divider" aria-hidden="true"></div>':''}<button class="nav-item${state.chapter===i?' is-current':''}" type="button" data-chapter="${i}" ${state.chapter===i?'aria-current="step"':''} aria-label="${i===6?'Дополнительно':`Глава ${i+1}`}: ${esc(lesson.nav)}${isChapterDone(i)?', задания решены':''}"><span class="nav-number" aria-hidden="true">${i===6?'+':String(i+1).padStart(2,'0')}</span><span class="nav-copy">${esc(lesson.nav)}<small>${esc(lesson.sub)}</small></span>${isChapterDone(i)?'<span class="nav-check" aria-hidden="true">✓</span>':''}</button>`).join('')+`<button class="nav-item${state.chapter===7?' is-current':''}" type="button" data-chapter="7" ${state.chapter===7?'aria-current="step"':''}><span class="nav-number" aria-hidden="true">↻</span><span class="nav-copy">Тренажёр<small>Новые задачи каждый раз</small></span></button>`;
+      const count=doneCount();$('#progress-text').textContent=`${count} из 6`;
+      $('#progress-fill').style.width=`${count/6*100}%`;$('#course-progress').setAttribute('aria-valuenow',String(count));
+      $('#course-progress').setAttribute('aria-valuetext',`Решены задания в ${count} из 6 основных глав`);
+      $$('.nav-item').forEach(button=>button.addEventListener('click',()=>goTo(Number(button.dataset.chapter))));
+    }
+    function footer(){return `<footer class="footer"><span id="storage-note"></span><span><button class="text-button" type="button" data-open-cheatsheet>Памятка</button> · <button class="text-button" id="reset-open" type="button">Начать заново</button></span></footer>`;}
+    function goTo(index,scroll=true){state.chapter=index;save();renderNav();if(index===7)renderPractice();else renderLesson(index);if(scroll){$('#main').focus({preventScroll:true});try{window.scrollTo({top:window.innerWidth>700?0:Math.max(0,$('#main').getBoundingClientRect().top+window.scrollY-12),behavior:reducedMotion()?'instant':'smooth'});}catch{}}}
+    function renderLesson(index){const l=lessons[index];
+      $('#main').innerHTML=`<div class="lesson-top"><div class="lesson-topline"><span class="step-label">${index<6?`Глава ${index+1} / 6`:'После основного маршрута'}</span>${l.tag?`<span class="pill">${l.tag}</span>`:''}</div><h1>${l.title}</h1><p class="lesson-lead">${l.lead}</p></div><div class="lesson-core">${l.core}</div><section class="lesson-card model-card" aria-labelledby="lab-title"><div class="card-heading"><div><div class="eyebrow">Исследуй руками</div><h2 id="lab-title">${l.labTitle}</h2><p>${l.labGuide}</p></div><div class="model-icon" aria-hidden="true">${['◫','↔','≡','≶','+','∷','×'][index]}</div></div><div id="lab-container"></div></section><div class="insight"><span class="insight-marker" aria-hidden="true">!</span><div>${fmt(l.insight)}</div></div><details class="theory"><summary>Разобраться глубже: названия, объяснение, примеры</summary><div class="theory-content">${fmt(l.theory)}</div></details><section class="quiz-zone" aria-labelledby="quiz-title"><div class="quiz-heading"><div><h2 id="quiz-title">Проверь понимание</h2><p>Можно пользоваться моделью и подсказками.</p></div><div class="question-dots" id="question-dots" aria-label="Задания главы"></div></div><div id="question-container"></div></section><div class="lesson-end"><p id="chapter-summary"></p><div class="end-actions">${index>0?`<button class="back-chapter" type="button" id="prev-chapter" aria-label="Предыдущая глава">←</button>`:''}<button class="btn" id="next-chapter" type="button">${index===5?'К следующему шагу':index===6?'В тренажёр':'Следующая глава'} <span aria-hidden="true">→</span></button></div></div>${footer()}`;
+      if(index<6)window.FractionLabs.mount(index,$('#lab-container'),{frac,gcd,lcm});else window.FractionBonus.mount($('#lab-container'),{frac,gcd,lcm});
+      $('#next-chapter').addEventListener('click',()=>goTo(index+1));if(index>0)$('#prev-chapter').addEventListener('click',()=>goTo(index-1));
+      const qs=chapterQuestions(index);let cursor=Number(state.cursor[index])||0;if(cursor<0||cursor>=qs.length)cursor=0;state.cursor[index]=cursor;
+      renderChapterQuestion();wireCommon();updateChapterSummary();
+    }
+    function updateChapterSummary(){const el=$('#chapter-summary');if(!el||state.chapter>6)return;const qs=chapterQuestions(state.chapter),solved=qs.filter(q=>getRecord(q.id).solved===true).length;el.innerHTML=isChapterDone(state.chapter)?`<strong>Глава освоена — все ${qs.length} задания решены.</strong>${state.chapter===5?'Основной маршрут пройден. Можно потренироваться или пойти дальше.':'Можешь перейти дальше или ещё поэкспериментировать.'}`:`<strong>Решено ${solved} из ${qs.length} заданий.</strong>Все главы открыты: выбирай удобный темп.`;}
+    function renderChapterQuestion(focus=false){const qs=chapterQuestions(state.chapter);const cursor=Number(state.cursor[state.chapter])||0;const q=qs[cursor];
+      $('#question-dots').innerHTML=qs.map((task,i)=>`<button class="question-dot${i===cursor?' is-active':''}${getRecord(task.id).solved?' is-solved':''}" type="button" data-question="${i}" ${i===cursor?'aria-current="true"':''} aria-label="Задание ${i+1}${getRecord(task.id).solved?', решено':''}">${getRecord(task.id).solved?'✓':i+1}</button>`).join('');
+      $$('[data-question]').forEach(b=>b.addEventListener('click',()=>{state.cursor[state.chapter]=Number(b.dataset.question);save();renderChapterQuestion(true);}));
+      if(!q){$('#question-container').textContent='Задания пока недоступны.';return;}
+      renderTask(q,getRecord(q.id),$('#question-container'),{mode:'chapter',cursor,total:qs.length});
+      if(focus){$('#question-prompt').focus({preventScroll:true});}
+    }
+    function answerMarkup(q,r){
+      if(q.type==='choice'){return `<fieldset class="choice-list"><legend class="visually-hidden">Выбери один ответ</legend>${q.options.map((opt,i)=>`<label class="choice"><input type="radio" name="answer-choice" value="${i}" ${Number.isInteger(r.choice)&&r.choice===i?'checked':''} ${r.solved?'disabled':''}><span class="choice-label">${fmt(opt)}</span></label>`).join('')}</fieldset>`;}
+      if(q.type==='fraction'){return `<div class="answer-row"><div class="fraction-input"><label class="visually-hidden" for="answer-num">Числитель ответа</label><input id="answer-num" name="numerator" inputmode="numeric" type="text" autocomplete="off" maxlength="6" placeholder="?" aria-label="Числитель ответа" value="${esc(r.num||'')}" ${r.solved?'disabled':''}><label class="visually-hidden" for="answer-den">Знаменатель ответа</label><input id="answer-den" name="denominator" inputmode="numeric" type="text" autocomplete="off" maxlength="6" placeholder="?" aria-label="Знаменатель ответа" value="${esc(r.den||'')}" ${r.solved?'disabled':''}></div><p class="muted">Сверху — числитель, снизу — знаменатель.<br>Любая равная дробь подходит.</p></div>`;}
+      return `<div class="answer-row"><label class="visually-hidden" for="answer-int">Ответ целым числом</label><input class="integer-input" id="answer-int" name="integer" type="text" inputmode="numeric" autocomplete="off" maxlength="6" placeholder="Ответ" value="${esc(r.value||'')}" ${r.solved?'disabled':''}><p class="muted">Введи целое число.</p></div>`;
+    }
+    function renderTask(q,r,container,context){container.innerHTML=`<form class="question-card" id="answer-form" novalidate><div class="question-meta"><span>${context.mode==='practice'?'Свободная практика':`Задание ${context.cursor+1} из ${context.total}`}</span>${q.difficulty==='stretch'?'<span class="pill">На догадку</span>':''}${r.solved?'<span class="mini-badge">Решено ✓</span>':''}</div><div class="question-prompt" id="question-prompt" tabindex="-1">${fmt(q.prompt)}</div>${answerMarkup(q,r)}<div class="question-actions"><button class="btn" type="submit" ${r.solved?'disabled':''}>${r.solved?'Ответ верный ✓':'Проверить'}</button><button class="hint-button" id="task-hint" type="button">Подсказка</button><button class="hint-button" id="task-solution" type="button">Разобрать решение</button></div><div id="answer-feedback" aria-live="polite" aria-atomic="true"></div>${context.mode==='chapter'?`<div class="question-footer"><span class="muted">Ошибки не отнимают прогресс.</span><button class="next-question" id="task-next" type="button">${context.cursor<context.total-1?'Дальше →':'К первому ↺'}</button></div>`:''}</form>`;
+      const form=$('#answer-form',container);form.addEventListener('submit',event=>{event.preventDefault();checkTask(q,r,container,context);});
+      $('#task-hint',container).addEventListener('click',()=>{r.assisted=true;saveIfNeeded(context);showFeedback(container,'hint','Посмотри на смысл',q.hint);});
+      $('#task-solution',container).addEventListener('click',()=>{r.assisted=true;r.revealed=true;saveIfNeeded(context);showFeedback(container,'hint','Разбор',q.explanation+'<p>Теперь введи ответ самостоятельно. Просмотр решения сам по себе не отмечает задание решённым.</p>');});
+      if(context.mode==='chapter')$('#task-next',container).addEventListener('click',()=>{state.cursor[state.chapter]=(context.cursor+1)%context.total;save();renderChapterQuestion(true);});
+      if(r.solved)showFeedback(container,'success','Верно',q.explanation);
+    }
+    function saveIfNeeded(context){if(context.mode==='chapter')save();}
+    function showFeedback(container,type,title,body){$('#answer-feedback',container).innerHTML=`<div class="feedback ${type}"><span class="feedback-symbol" aria-hidden="true">${type==='success'?'✓':type==='error'?'↻':'?'}</span><div><strong>${title}</strong>${fmt(body)}</div></div>`;}
+    function parseInteger(value){const cleaned=String(value).trim();if(!/^\d{1,6}$/.test(cleaned))return null;const n=Number(cleaned);return Number.isSafeInteger(n)?n:null;}
+    function checkTask(q,r,container,context){if(r.solved)return;let correct=false;
+      if(q.type==='choice'){const selected=$('input[name="answer-choice"]:checked',container);if(!selected){showFeedback(container,'hint','Нужен твой выбор','Выбери один из вариантов, затем нажми «Проверить».');return;}r.choice=Number(selected.value);correct=r.choice===q.answer;}
+      else if(q.type==='fraction'){r.num=$('#answer-num',container).value.trim();r.den=$('#answer-den',container).value.trim();const n=parseInteger(r.num),d=parseInteger(r.den);if(n===null||d===null){showFeedback(container,'hint','Запиши дробь двумя числами','Заполни оба поля целыми неотрицательными числами: числитель сверху, знаменатель снизу. Десятичная запись здесь не нужна.');return;}if(d===0){showFeedback(container,'error','Знаменатель не бывает нулём','Делить на ноль нельзя. Укажи, на сколько равных долей разделено целое: это положительное целое число.');return;}correct=n*q.answer.d===q.answer.n*d;}
+      else {r.value=$('#answer-int',container).value.trim();const n=parseInteger(r.value);if(n===null){showFeedback(container,'hint','Нужно целое число','Введи неотрицательное целое число без единиц измерения и других знаков.');return;}correct=n===q.answer;}
+      r.attempts=(Number(r.attempts)||0)+1;
+      if(correct){r.solved=true;if(context.mode==='practice'){trainer.count++;$('#practice-count').textContent=`За это занятие решено: ${trainer.count}`;}saveIfNeeded(context);renderTask(q,r,container,context);if(context.mode==='chapter'){renderNav();updateChapterSummary();refreshDots();}const feedback=$('#answer-feedback',container);feedback.setAttribute('tabindex','-1');feedback.focus({preventScroll:true});}
+      else {saveIfNeeded(context);showFeedback(container,'error','Пока не сходится — попробуй ещё',q.hint);}
+    }
+    function refreshDots(){$$('[data-question]').forEach(b=>{const q=chapterQuestions(state.chapter)[Number(b.dataset.question)];const solved=!!getRecord(q.id).solved;b.classList.toggle('is-solved',solved);b.textContent=solved?'✓':String(Number(b.dataset.question)+1);b.setAttribute('aria-label',`Задание ${Number(b.dataset.question)+1}${solved?', решено':''}`);});}
+    const rand=(min,max)=>Math.floor(Math.random()*(max-min+1))+min;
+    function generateTask(topic){if(topic==='mixed')topic=['equivalent','compare','sum','part'][rand(0,3)];const d=rand(2,9),n=rand(1,d-1);
+      if(topic==='equivalent'){const k=rand(2,5),missing=rand(0,1)===0;return {id:'practice',type:'integer',prompt:missing?`Каким числом заменить □, чтобы равенство было верным? <span class="equation">${frac(n,d)} = ${frac('□',d*k)}</span>`:`Каким числом заменить □, чтобы равенство было верным? <span class="equation">${frac(n,d)} = ${frac(n*k,'□')}</span>`,answer:missing?n*k:d*k,hint:`Одно число в записи умножили на ${k}. Что нужно сделать со вторым числом?`,explanation:`Умножаем и числитель, и знаменатель на ${k}: ${n}/${d} = ${n*k}/${d*k}. Количество не меняется.`,difficulty:'base'};}
+      if(topic==='compare'){const d2=rand(2,9),n2=rand(1,d2);const a=n*d2,b=n2*d;const common=lcm(d,d2);return {id:'practice',type:'choice',prompt:`Какой знак нужен между дробями? <span class="equation">${frac(n,d)} <span>□</span> ${frac(n2,d2)}</span>`,options:['&lt; — меньше','&gt; — больше','= — равно'],answer:a<b?0:a>b?1:2,hint:'Представь одинаковые целые. Если сразу не видно, запиши обе дроби с общим знаменателем.',explanation:`Общий знаменатель ${common}: ${n}/${d} = ${n*(common/d)}/${common}, а ${n2}/${d2} = ${n2*(common/d2)}/${common}. Теперь сравни числители. Поэтому ${n}/${d} ${a<b?'&lt;':a>b?'&gt;':'='} ${n2}/${d2}.`,difficulty:'base'};}
+      if(topic==='sum'){const d2=rand(2,8),n2=rand(1,d2-1),common=lcm(d,d2),subtract=rand(0,2)===0;let a=n,b=d,c=n2,e=d2;if(subtract&&a*e<c*b){[a,c]=[c,a];[b,e]=[e,b];}const A=a*(common/b),B=c*(common/e),result=subtract?A-B:A+B;const symbol=subtract?'−':'+';return {id:'practice',type:'fraction',prompt:`Вычисли: <span class="equation">${frac(a,b)} ${symbol} ${frac(c,e)} = <span>?</span></span>`,answer:{n:result,d:common},hint:`Сначала вырази обе дроби в одинаковых долях. Подойдёт знаменатель ${common}.`,explanation:`${a}/${b} ${symbol} ${c}/${e} = ${A}/${common} ${symbol} ${B}/${common} = ${result}/${common}${gcd(result,common)>1?' = '+simple(result,common):''}. Знаменатель при ${subtract?'вычитании':'сложении'} одинаковых долей остаётся прежним.`,difficulty:'base'};}
+      const per=rand(2,8),whole=per*d;return {id:'practice',type:'integer',prompt:`В коробке ${whole} фишек. Взяли ${n}/${d} всех фишек. Сколько фишек взяли?`,answer:per*n,hint:`Раздели ${whole} на ${d} равных групп. Затем возьми ${n} таких групп.`,explanation:`В одной доле ${whole} : ${d} = ${per} фишек. В ${n} долях: ${per} × ${n} = ${per*n}.`,difficulty:'base'};
+    }
+    function newPractice(){trainer.task=generateTask(trainer.topic);trainer.record={};renderTask(trainer.task,trainer.record,$('#practice-task'),{mode:'practice'});}
+    function renderPractice(){$('#main').innerHTML=`<div class="lesson-top"><div class="lesson-topline"><span class="step-label">Свободная практика</span><span class="pill">Без таймера</span></div><h1>Теперь попробуй сам.</h1><p class="lesson-lead">Здесь каждый раз появляются новые примеры. Выбери тему или смешай всё, что уже освоил.</p></div>${doneCount()===6?'<div class="completion-banner"><strong>Основной маршрут пройден.</strong> Все задания в шести главах решены. Можно закрепить идеи здесь и вернуться к любому эксперименту.</div>':''}<div class="practice-intro">Перед ответом спроси себя: <strong>что здесь целое, какие доли я считаю и каким примерно должен быть результат?</strong></div><div class="practice-controls"><label class="control" for="practice-topic"><span>Что потренировать</span><select id="practice-topic"><option value="mixed">Всё вперемешку</option value="equivalent">Равные дроби</option><option value="compare">Сравнение</option><option value="sum">Сложение и вычитание</option><option value="part">Дробь от количества</option></select></label><button class="btn btn-secondary" id="practice-new" type="button">Новая задача ↻</button></div><div id="practice-task"></div><p class="practice-note" id="practice-count">За это занятие решено: ${trainer.count}</p><div class="concept-map"><div class="concept-card"><strong>Доля целого</strong>${frac(3,4)}<p>3 равные доли из 4 в одном целом.</p></div><div class="concept-card"><strong>Равные записи</strong>${frac(1,2)} = ${frac(2,4)}<p>Размер кусочков меняется, значение — нет.</p></div><div class="concept-card"><strong>Проверка здравым смыслом</strong><p>3/4 положительного количества меньше всего количества. 3/4 + 3/4 больше единицы.</p></div></div>${footer()}`;$('#practice-topic').value=trainer.topic;$('#practice-topic').addEventListener('change',e=>{trainer.topic=e.target.value;newPractice();});$('#practice-new').addEventListener('click',newPractice);if(trainer.task)renderTask(trainer.task,trainer.record,$('#practice-task'),{mode:'practice'});else newPractice();wireCommon();}
+    function wireCommon(){updateStorageNote();$$('[data-open-cheatsheet]',$('#main')).forEach(b=>b.addEventListener('click',showCheatsheet));const reset=$('#reset-open');if(reset)reset.addEventListener('click',showReset);}
+    function openModal(content){previousFocus=document.activeElement;$('#modal-content').innerHTML=content;$('#modal-backdrop').hidden=false;document.body.style.overflow='hidden';$('#modal-close').focus();}
+    function closeModal(){$('#modal-backdrop').hidden=true;document.body.style.overflow='';if(previousFocus&&previousFocus.isConnected)previousFocus.focus();}
+    function showGuide(){openModal(`<div class="guide-tag">Самостоятельный маршрут</div><h2 id="modal-title">Сначала увидь. Потом объясни.</h2><p>Для начала достаточно уметь складывать, вычитать, умножать и делить целые числа. Знание дробей не нужно.</p><ol><li><strong>Иди с первой главы.</strong> Прочитай короткое объяснение и поработай с моделью: нажимай на части, двигай ползунки.</li><li><strong>Предскажи результат.</strong> Сначала подумай, что должно измениться, и только потом проверь.</li><li><strong>Ответь на задания.</strong> Если трудно, вернись к рисунку или возьми подсказку. Штрафов и таймера нет.</li><li><strong>Объясни своими словами.</strong> Почему дроби равны? Почему ответ больше или меньше единицы? Это полезнее, чем просто запомнить правило.</li></ol><p>Шесть глав — основной маршрут. Его можно пройти за несколько занятий. «Шаг дальше» — необязательное знакомство с умножением и делением. В тренажёре примеры обновляются.</p><h3>Взрослому рядом</h3><p>Попроси ученика сначала сделать предположение и объяснить его. При ошибке спроси: «Какие части мы сейчас считаем?» или «Что здесь приняли за целое?»</p><p class="muted small">Урок работает без интернета. Прогресс хранится только в этом браузере, если он разрешает сохранение. В другом браузере прохождение начнётся заново.</p><div class="btn-group"><button class="btn" id="guide-close" type="button">Понятно, начинаем →</button></div>`);$('#guide-close').addEventListener('click',closeModal);}
+    function showCheatsheet(){openModal(`<div class="guide-tag">Памятка</div><h2 id="modal-title">Шесть идей о дробях</h2><div class="cheat-grid"><div class="cheat-item"><strong>1. Сначала договорись о целом</strong><p>В 3/4 знаменатель 4 называет число равных долей в единице, числитель 3 — число взятых долей.</p></div><div class="cheat-item"><strong>2. Дроби — числа</strong><p>0/4 = 0; 4/4 = 1; 5/4 = 1 1/4. Знаменатель не равен нулю.</p></div><div class="cheat-item"><strong>3. Меняй оба числа одинаково</strong><p>Умножай числитель и знаменатель на одно положительное целое число или дели оба без остатка на общий делитель.</p><div class="equation">${frac(1,2)} = ${frac(2,4)} = ${frac(3,6)}</div></div><div class="cheat-item"><strong>4. Для сравнения удобны одинаковые доли</strong><div class="equation">${frac(1,2)} = ${frac(3,6)} &lt; ${frac(4,6)} = ${frac(2,3)}</div></div><div class="cheat-item"><strong>5. При сложении и вычитании считай одинаковые доли</strong><div class="equation">${frac(1,3)} + ${frac(1,4)} = ${frac(4,12)} + ${frac(3,12)} = ${frac(7,12)}</div></div><div class="cheat-item"><strong>6. Часть от количества: раздели, потом умножь</strong><p>3/4 от 12: сначала 12 : 4 = 3, затем 3 × 3 = 9.</p></div></div>`);$('#modal-content').innerHTML=fmt($('#modal-content').innerHTML);}
+    function showReset(){openModal(`<div class="guide-tag">Новое прохождение</div><h2 id="modal-title">Начать с первой главы?</h2><p>Отметки о решённых заданиях и выбранная глава в этом браузере будут сброшены. Сам урок останется доступен.</p><div class="btn-group"><button class="btn btn-warning" id="reset-confirm" type="button">Начать заново</button><button class="btn btn-secondary" id="reset-cancel" type="button">Продолжить прохождение</button></div>`);$('#reset-cancel').addEventListener('click',closeModal);$('#reset-confirm').addEventListener('click',()=>{state={chapter:0,records:{},cursor:{}};trainer={topic:'mixed',count:0,task:null,record:{}};save();closeModal();goTo(0);});}
+    $('#help-open').addEventListener('click',showGuide);$$('[data-open-cheatsheet]',$('.sidebar')).forEach(b=>b.addEventListener('click',showCheatsheet));$('#modal-close').addEventListener('click',closeModal);$('#modal-backdrop').addEventListener('click',e=>{if(e.target===$('#modal-backdrop'))closeModal();});
+    document.addEventListener('keydown',event=>{if($('#modal-backdrop').hidden)return;if(event.key==='Escape'){event.preventDefault();closeModal();}if(event.key==='Tab'){const nodes=$$('button:not(:disabled),a[href],input:not(:disabled),select:not(:disabled),[tabindex="0"]',$('#modal-backdrop'));const first=nodes[0],last=nodes[nodes.length-1];if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+    if(window.FRACTION_BONUS_CSS){const style=document.createElement('style');style.textContent=window.FRACTION_BONUS_CSS;document.head.append(style);}
+    goTo(state.chapter,false);
+    window.FractionLesson = Object.freeze({parseInteger, gcd, lcm, generateTask, version:'1.0'});
+  })();
+  </script>
+</body>
+</html>
