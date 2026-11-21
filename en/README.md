@@ -7,7 +7,9 @@ I design and build AI systems that connect data, tools, and domain knowledge to 
 
 [LinkedIn](https://www.linkedin.com/in/naumenko-d/) · [Telegram](https://t.me/naumenko_ds) · [Email](mailto:dima-post2009@yandex.com) · [Explore the demos](https://dmitrii-naumenko.github.io/portfolio/)
 
-## Selected commercial work
+## Commercial work I can share publicly
+
+A selection of projects from my commercial experience that I can demonstrate through public product pages and implementation stories.
 
 Development of the **FinGPT** financial AI assistant and an **INNOMA** product, a warehouse Telegram bot at **Ultima BusinessWare**, and participation in an **Ivanti** implementation at Krasnodar Airport.
 

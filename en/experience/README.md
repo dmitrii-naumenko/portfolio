@@ -1,8 +1,8 @@
 [Portfolio](../README.md) · [Русский](../../experience/README.md)
 
-# Selected commercial work
+# Commercial work I can share publicly
 
-Examples of products and implementations I contributed to. Public sources describe each product; my contribution is stated separately.
+This selection brings together projects from my commercial experience that I can demonstrate through public product pages and implementation stories. My contribution to each project is stated separately.
 
 | Work | My contribution | Public evidence |
 |---|---|---|

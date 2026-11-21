@@ -7,7 +7,9 @@
 
 [LinkedIn](https://www.linkedin.com/in/naumenko-d/) · [Telegram](https://t.me/naumenko_ds) · [Email](mailto:dima-post2009@yandex.com) · [Открыть демонстрации](https://dmitrii-naumenko.github.io/portfolio/)
 
-## Коммерческий опыт
+## Коммерческие проекты с публичными материалами
+
+Ниже — несколько проектов из моего коммерческого опыта, которые можно показать через публичные страницы продуктов и описания внедрений.
 
 Разработка финансового AI-ассистента **FinGPT** и продукта **INNOMA**, Telegram-бот для управления складом в **Ultima BusinessWare**, участие во внедрении **Ivanti** в аэропорту Краснодара.
 
