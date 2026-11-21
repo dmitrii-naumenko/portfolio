@@ -4,7 +4,7 @@
 
 **A substantial, evolving interactive learning system, currently covering biology and olympiad-style mathematics.**
 
-![From explanation to practice](../../assets/school.svg)
+![From explanation to practice](../../assets/en/school.svg)
 
 [Open one sample lesson: the fractions lab, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/school.html). Explore fraction models, equivalent fractions, and the practice section. This is one selected learning example from the mathematics direction.
 
@@ -16,9 +16,9 @@ The content workflow combines PDF and OCR extraction, AI-assisted authoring, ind
 
 ## Two growing learning areas
 
-**Biology.** A structured course combining explanations, illustrations, interactive models, self-checks, and homework. It includes 27 sections and 19 short project reports. This direction uses PDF/OCR extraction, structured lesson data, independent source review, templates, validation, and standalone HTML generation.
+**Biology.** A structured course combining explanations, illustrations, interactive models, self-checks, and homework. It includes 27 sections and 19 short project reports.
 
-**Olympiad-style mathematics.** This direction is developing as a series of lessons and modules, moving from visual understanding to reasoning, patterns, and transfer problems. The public fractions lab is one sample lesson. The series is expanding with new topics and modules; the portfolio presents a selected part of the system.
+**Olympiad-style mathematics.** A growing series of lessons and modules, moving from visual understanding to reasoning, patterns, and transfer problems. The fractions lab is one selected public example from this direction.
 
 ## Engineering decisions
 
@@ -29,6 +29,6 @@ The content workflow combines PDF and OCR extraction, AI-assisted authoring, ind
 
 ## How the system grows
 
-New material extends a course or a standalone module. Shared templates provide a consistent interface; source review checks meaning and exercises, while automated validation checks structure and assembly. Browser verification covers visual models, self-checks, and narrow screens.
+New material extends courses and standalone modules. Browser verification covers interactive models, self-checks, and narrow screens.
 
-The fractions lab was integrated as a completed authored artifact. It shows the interactive outcome of the mathematics direction; the biology course separately demonstrates textbook processing and the assembly of a lesson series.
+The fractions lab was integrated as a completed authored artifact.

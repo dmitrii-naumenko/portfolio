@@ -4,24 +4,22 @@
 
 **In use and evolving.**
 
-![AI Software Factory workflow](../../assets/factory.svg)
+![AI Software Factory workflow](../../assets/en/factory.svg)
 
 **[Explore a step-by-step task example, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/factory.html)**
 
 ## Purpose and my contribution
 
-I’m developing an AI software factory that turns a development goal into a coordinated cycle of planning, implementation, review, and verification. It builds on my experience creating AI development workflows and brings the coordination of that work into a reusable system.
+I’m developing an AI software factory that turns a development goal into a coordinated cycle of planning, implementation, review, and verification. It brings my experience creating AI development workflows into a reusable system.
 
-The factory manages how work moves forward—breaking goals into tasks, coordinating coding agents, and feeding review findings and test results back into implementation. The engineering harness provides the execution layer, with project context, isolated workspaces, repeatable checks, and development tools.
+The factory breaks goals into tasks and coordinates coding agents. The engineering harness provides the execution layer, with project context, isolated workspaces, repeatable checks, and development tools.
 
-Standalone installation into existing repositories and adaptation to their architecture, conventions, and quality standards remain a development direction. Priorities and consequential decisions stay under the developer’s control.
+Further development focuses on standalone installation into existing repositories and adaptation to their architecture, conventions, and quality standards.
 
 ## Engineering decisions
 
 - Separate coordination from execution: factory manages work and feedback; harness supplies context, workspaces, checks, and tools.
 - Use the project’s own architecture, verification commands, and conventions.
-- Feed review findings and failed checks back into implementation.
-- Keep priorities and consequential decisions under developer control.
 
 ## How the factory carries a task forward
 

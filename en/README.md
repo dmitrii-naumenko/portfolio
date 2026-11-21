@@ -22,7 +22,7 @@ Development of the **FinGPT** financial AI assistant and an **INNOMA** product, 
 ### Autodiary
 **A Personal AI Platform for Learning and Decision-Making · in use and evolving**
 
-[![Autodiary: personal evidence informs the next decision](../assets/autodiary.svg)](../projects/autodiary/en/README.md)
+[![Autodiary: personal evidence informs the next decision](../assets/en/autodiary.svg)](../projects/autodiary/en/README.md)
 
 A personal AI platform for learning and decisions: an interactive knowledge library and trainers, a standalone English practice application, travel planning, personal consultations, news briefs, and research. These capabilities use accumulated context and feedback; life-metric analytics is one component.
 
@@ -33,7 +33,7 @@ A personal AI platform for learning and decisions: an interactive knowledge libr
 ### AI Software Factory
 **Automating the Development Lifecycle · in use and evolving**
 
-[![Factory: goal, plan, implementation, review, verification](../assets/factory.svg)](projects/factory.md)
+[![Factory: goal, plan, implementation, review, verification](../assets/en/factory.svg)](projects/factory.md)
 
 An AI software factory I am developing to coordinate planning, implementation, review, and verification. The factory manages work; an engineering harness provides the execution layer. It builds on my experience creating operational project-specific AI development workflows.
 
@@ -44,7 +44,7 @@ An AI software factory I am developing to coordinate planning, implementation, r
 ### School Lab
 **From Textbooks to Interactive Learning · biology and olympiad-style mathematics**
 
-[![School Lab: explanation, model, exploration, self-check](../assets/school.svg)](projects/school.md)
+[![School Lab: explanation, model, exploration, self-check](../assets/en/school.svg)](projects/school.md)
 
 A substantial, evolving system covering biology and olympiad-style mathematics through courses, lessons, and modules with explanations, visual models, and self-checks. The mathematics direction is developing as a lesson series. The public fractions lab is one selected example; completed pages work offline.
 

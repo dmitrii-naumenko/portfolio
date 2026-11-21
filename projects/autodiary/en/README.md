@@ -8,7 +8,7 @@ The project began with health and activity data. Today the analytics core is one
 
 **In use and evolving.** [Author’s portfolio](https://github.com/dmitrii-naumenko/portfolio/tree/main/en) · [How the modules connect](vision.md) · [An analytics example, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html)
 
-![Autodiary: personal context, knowledge, practice, and decisions](../../../assets/autodiary.svg)
+![Autodiary: personal context, knowledge, practice, and decisions](../../../assets/en/autodiary.svg)
 
 ## What the platform delivers
 
