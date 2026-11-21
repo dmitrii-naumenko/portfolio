@@ -30,4 +30,4 @@
 
 ## Дополнительно
 
-[Мой проект банковского антифрода — ML System Design Challenge 2023](system-design.md)
+[Проект банковского антифрода — ML System Design Challenge 2023](system-design.md)

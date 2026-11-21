@@ -12,7 +12,7 @@ For English, see [Credentials](README.en.md). · [Вернуться в порт
 | 2023 | **Международный хакатон** | Эксперт хакатона | «Цифровой прорыв. Сезон: Искусственный интеллект» | [Превью](previews/2023-international-hackathon-expert.jpg) · [Оригинал PNG](files/2023-international-hackathon-expert.png) |
 | 2023 | **Приём учётных документов** | Эксперт кейса | «Цифровой прорыв. Сезон: Искусственный интеллект» | [Превью](previews/2023-rzd-document-processing-expert.jpg) · [PDF](files/2023-rzd-document-processing-expert.pdf) |
 | 2023 | **Безопасный маршрут** | Эксперт кейса | «Цифровой прорыв. Сезон: Искусственный интеллект» | [Превью](previews/2023-rzd-safe-route-expert.jpg) · [PDF](files/2023-rzd-safe-route-expert.pdf) |
-| 2023 | **AI News** | **2-е место** | AI News | [Превью](previews/2023-ai-news-finalist.jpg) · [PDF](files/2023-ai-news-finalist.pdf) |
+| 2023 | **AI News** | 2-е место | AI News | [Превью](previews/2023-ai-news-finalist.jpg) · [PDF](files/2023-ai-news-finalist.pdf) |
 | 2023 | **Формирование графика движения судов** | Эксперт кейса | «Цифровой прорыв. Сезон: Искусственный интеллект» | [Превью](previews/2023-vessel-scheduling-expert.jpg) · [PDF](files/2023-vessel-scheduling-expert.pdf) |
 | 2023 | **MTS Machine Learning Cup** | Участие, топ-50% лидерборда | МТС Digital / ODS | [Превью](previews/2023-mts-ml-cup-top-50-percent.jpg) · [PDF](files/2023-mts-ml-cup-top-50-percent.pdf) |
 | 2023 | **Симулятор ML** | Практический курс; на сохранённом экране все группы задач выполнены на 100% | karpov.courses | [Превью](previews/2023-simulator-ml.jpg) · [Оригинал PNG](files/2023-simulator-ml.png) |
@@ -21,8 +21,6 @@ For English, see [Credentials](README.en.md). · [Вернуться в порт
 | 2022 | **Certified Administrator for Ivanti Service Manager** | Профессиональная сертификация | Ivanti | [Превью](previews/2022-ivanti-certified-administrator.jpg) · [PDF](files/2022-ivanti-certified-administrator.pdf) |
 | 2022 | **ITIL 4 Specialist: Create, Deliver and Support** | Профессиональная сертификация | PeopleCert / AXELOS | [Превью](previews/2022-itil-create-deliver-support.jpg) · [PDF](files/2022-itil-create-deliver-support.pdf) |
 | 2021 | **ITIL Foundation in IT Service Management, ITIL 4 Edition** | Профессиональная сертификация | PeopleCert / AXELOS | [Превью](previews/2021-itil-foundation.jpg) · [PDF](files/2021-itil-foundation.pdf) |
-
-Сертификат LangChain Academy выдан на имя аккаунта **Dmitrii Home**. Результат AI News уточнён владельцем: 2-е место; сертификат оформлен как подтверждение финала. В строке Practicum показана вторая страница документа с именем, объёмом программы и результатами. Для Симулятора ML сохранён экран прогресса; он не обозначается как диплом.
 
 <details>
 <summary>Посмотреть превью документов</summary>

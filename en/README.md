@@ -56,7 +56,7 @@ A substantial, evolving system covering biology and olympiad-style mathematics t
 
 **[Certificates, learning, and expert roles](../credentials/README.en.md)**
 
-- [ML System Design Challenge 2023](experience/system-design.md): my bank anti-fraud system design, with a design document and presentation.
-- **AI News 2023: second place at the hackathon.**
+- [ML System Design Challenge 2023](experience/system-design.md): bank anti-fraud system design, with a design document and presentation.
+- **AI News 2023** — second place at the hackathon.
 
 The Autodiary analytics example uses synthetic data. The public School Lab lesson presents one part of an evolving learning system. Example interfaces are in Russian.

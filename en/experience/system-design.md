@@ -2,7 +2,7 @@
 
 # ML System Design Challenge 2023
 
-My ML system design for bank transaction fraud detection, prepared for Reliable ML / Data Fest Online 2023. I carried out the principal work on the system design and the design document.
+ML system design for bank transaction fraud detection, prepared for Reliable ML / Data Fest Online 2023.
 
 The project is featured in Reliable ML’s collection of example design documents.
 
