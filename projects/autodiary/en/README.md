@@ -18,7 +18,6 @@ The project began with health and activity data. Today the analytics core is one
 | **Continue learning English** | A local application with learning maps, interactive lessons, vocabulary, audio, and spaced review. An AI coach connects speaking and writing practice with lesson history and recurring difficulties |
 | **Plan a family trip** | An itinerary with alternatives for weather and physical load, preparation, equipment, and a mobile-friendly HTML version. Future plans incorporate participants’ impressions and lessons from previous trips |
 | **Explore health, training, or nutrition questions** | A source-linked medical history and questions for a clinician, a checkup plan, a food review from photos and labels, or the next workout and updated programme cards, informed by available evidence and personal context |
-| **Continue a personal or professional question** | Context carried from earlier discussions through their actual outcome and next steps, with previous corrections and decisions available when returning to the topic |
 | **Choose something that fits my preferences** | A film, book, equipment choice, or shared activity informed by earlier decisions, preferences, and new feedback |
 | **Make sense of a week or month** | A connected review of sleep, activity, workouts, diary entries, and events, with meaningful changes, limits, and next steps that can be checked |
 | **Maintain information focus** | A personal brief of significant AI and developer-tool news, with explanations of relevance, deeper follow-up on selected topics, and feedback informing subsequent briefs |
@@ -85,6 +84,6 @@ Images show earlier versions of individual components. The interactive knowledge
 
 ## Current status
 
-Autodiary is an evolving personal system used through an AI assistant, specialized workflows, and individual local tools. Results are retained and reused in subsequent tasks. It is an individual project for my own use rather than a claimed finished mass-market service. No measured improvement in health or learning is claimed; medical context supports preparation for a clinician’s consultation.
+Autodiary is an evolving personal system used through an AI assistant, specialized workflows, and individual local tools. Results are retained and reused in subsequent tasks. It is an individual project for my own use rather than a claimed finished mass-market service. Medical context supports preparation for a clinician’s consultation.
 
 **Dmitrii Naumenko** · [LinkedIn](https://www.linkedin.com/in/naumenko-d/) · [Telegram](https://t.me/naumenko_ds) · [Email](mailto:dima-post2009@yandex.com)

@@ -5,7 +5,7 @@
 
 I design and build AI systems that connect data, tools, and domain knowledge to solve real problems. My focus spans the full path from a user need and system architecture to verification and continued product development.
 
-[LinkedIn](https://www.linkedin.com/in/naumenko-d/) · [Telegram](https://t.me/naumenko_ds) · [Email](mailto:dima-post2009@yandex.com) · [Explore projects and examples](https://dmitrii-naumenko.github.io/portfolio/)
+[LinkedIn](https://www.linkedin.com/in/naumenko-d/) · [Telegram](https://t.me/naumenko_ds) · [Email](mailto:dima-post2009@yandex.com)
 
 ## Commercial work I can share publicly
 
@@ -16,6 +16,8 @@ Development of the **FinGPT** financial AI assistant and an **INNOMA** product, 
 [Selected work and public sources](experience/README.md)
 
 ## Personal AI projects
+
+[Explore projects and examples](https://dmitrii-naumenko.github.io/portfolio/)
 
 ### Autodiary
 **A Personal AI Platform for Learning and Decision-Making · in use and evolving**
@@ -50,9 +52,11 @@ A substantial, evolving system covering biology and olympiad-style mathematics t
 
 [Read the case](projects/school.md) · [Try the fractions lab, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/school.html)
 
-## Architecture and credentials
+## Certificates and architecture work
 
-- [ML System Design Challenge 2023](experience/system-design.md): team design of a bank anti-fraud system, with a design document and presentation.
-- **AI News 2023: second place**, technical-expert roles at hackathons, professional certifications, and courses: [selected credentials](../credentials/README.en.md).
+**[Certificates, learning, and expert roles](../credentials/README.en.md)**
+
+- [ML System Design Challenge 2023](experience/system-design.md): my bank anti-fraud system design, with a design document and presentation.
+- **AI News 2023: second place at the hackathon.**
 
 The Autodiary analytics example uses synthetic data. The public School Lab lesson presents one part of an evolving learning system. Example interfaces are in Russian.

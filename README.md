@@ -5,7 +5,7 @@
 
 Проектирую и разрабатываю AI-системы, которые связывают данные, инструменты и знания предметной области и помогают решать реальные задачи. Мне интересен весь путь: от пользовательской потребности и архитектуры до проверки результата и дальнейшего развития продукта.
 
-[LinkedIn](https://www.linkedin.com/in/naumenko-d/) · [Telegram](https://t.me/naumenko_ds) · [Email](mailto:dima-post2009@yandex.com) · [Проекты и примеры](https://dmitrii-naumenko.github.io/portfolio/)
+[LinkedIn](https://www.linkedin.com/in/naumenko-d/) · [Telegram](https://t.me/naumenko_ds) · [Email](mailto:dima-post2009@yandex.com)
 
 ## Коммерческие проекты с публичными материалами
 
@@ -16,6 +16,8 @@
 [Выбранные работы и публичные источники](experience/README.md)
 
 ## Личные AI-проекты
+
+[Проекты и примеры](https://dmitrii-naumenko.github.io/portfolio/)
 
 ### Autodiary
 **A Personal AI Platform for Learning and Decision-Making · работает и развивается**
@@ -50,9 +52,11 @@
 
 [Разобрать кейс](projects/school.md) · [Попробовать лабораторию](https://dmitrii-naumenko.github.io/portfolio/demos/school.html)
 
-## Архитектурный опыт и подтверждения
+## Сертификаты и архитектурные работы
 
-- [ML System Design Challenge 2023](experience/system-design.md) — командный проект банковского антифрода: design document и выступление.
-- **AI News 2023 — 2-е место на хакатоне**, участие техническим экспертом в хакатонах, профессиональные сертификаты и обучение — [выбранные подтверждения](credentials/README.md).
+**[Сертификаты, обучение и экспертный опыт](credentials/README.md)**
+
+- [ML System Design Challenge 2023](experience/system-design.md) — мой проект банковского антифрода: design document и выступление.
+- **AI News 2023 — 2-е место на хакатоне.**
 
 В описаниях кейсов показаны личный вклад, существенные решения, проверка и фактическая стадия проекта. Данные в аналитическом примере Autodiary синтетические. Открытое занятие School Lab показывает один фрагмент развивающейся учебной системы.

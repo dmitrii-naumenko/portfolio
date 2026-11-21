@@ -43,4 +43,4 @@ Knowledge from books and other materials may support interpretation and the choi
 
 Calculation checks, data quality and analytical discipline serve different purposes. A passing calculation test does not establish a recommendation’s causal effect. Detailed personal context stays inside the private system; the public showcase contains selected materials and clearly identified demonstrations.
 
-Health and training workflows help interpret available data and prepare questions while preserving the limits of the source information. They do not provide a medical diagnosis. No measured improvement in health, productivity or learning is claimed here.
+Health and training workflows help interpret available data and prepare questions while preserving the limits of the source information. They do not provide a medical diagnosis.

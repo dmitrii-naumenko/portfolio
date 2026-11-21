@@ -41,6 +41,6 @@ This is a shared design principle; the actions and evidence depend on the task. 
 
 ## Status
 
-A working and evolving system for personal use. Specialized workflows run for user tasks and within defined processes. Modules can evolve independently. No measured improvement in health, learning, or productivity is claimed.
+A working and evolving system for personal use. Specialized workflows run for user tasks and within defined processes. Modules can evolve independently.
 
 The [March 2026 presentation](../presentation/autodiary_product.pdf) concerns an early analytics component. The [Autodiary case](README.md) presents the platform’s current scope.
