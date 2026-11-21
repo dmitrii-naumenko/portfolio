@@ -4,7 +4,7 @@ For English, see the [English version](en/README.md).
 
 Я создал Autodiary, чтобы использовать собственный опыт в следующих решениях. Проект начался с анализа здоровья и активности. Сегодня он связывает то, что я отслеживаю, изучаю и уже пробовал: полезное наблюдение в одной области жизни помогает разобраться с вопросом в другой.
 
-**[Посмотреть демонстрационный сценарий](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html)** · **[Портфолио автора](https://github.com/dmitrii-naumenko/portfolio)** · **[Методология](docs/methodology.md)**
+**[Посмотреть демонстрационный сценарий](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html)** · **[Портфолио автора](https://github.com/dmitrii-naumenko/portfolio)** · **[Методология аналитического ядра](docs/methodology.md)**
 
 ![Дашборд активности Autodiary](assets/dashboard_activity.png)
 
@@ -66,7 +66,7 @@ flowchart TD
 
 - [Демонстрация: от наблюдения к решению](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html) — отобранный пример на демонстрационных данных.
 - [Видение продукта и сценарии](docs/vision.md).
-- [Методология: расчёты, свидетельства и обратная связь](docs/methodology.md).
+- [Методология аналитического ядра: метрики и выводы](docs/methodology.md).
 - [Продуктовая презентация, март 2026 (PDF)](presentation/autodiary_product.pdf) — исторический срез аналитического ядра; не описание полного текущего продукта.
 
 ## Статус

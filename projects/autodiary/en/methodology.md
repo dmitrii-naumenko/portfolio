@@ -1,12 +1,14 @@
 [Русская версия](../docs/methodology.md)
 
-# Methodology
+# Analytics core methodology
 
 [Home](README.md) · [Product vision](vision.md)
 
-Autodiary separates observations, calculated indicators, interpretation and decisions. This makes it possible to inspect the basis of a finding and revisit it when new data appears.
+This document describes one component of Autodiary: the analytics core, covering metric calculation, data quality, and analytical findings. Other components and workflows are described in the [product vision](vision.md).
 
-## Analytics core
+The analytics core separates observations, calculated indicators, interpretation and decisions. This makes it possible to inspect the basis of a finding and revisit it when new data appears.
+
+## Metric calculation
 
 **Domains and dependencies.** Metrics belong to nine domains: sleep, activity, health, body, mentality, family, emotions, diary and system. Composite indicators depend on components; configuration defines their meaning and relationships.
 

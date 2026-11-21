@@ -2,7 +2,7 @@
 
 # Product vision
 
-[Home](README.md) · [Methodology](methodology.md)
+[Home](README.md) · [Analytics core methodology](methodology.md)
 
 Autodiary helps put personal data, knowledge and past experience to use in subsequent decisions. It started with connections between health, sleep, activity, mood, productivity and a diary. Related learning, travel and research workflows grew around that analytics core.
 

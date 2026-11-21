@@ -8,7 +8,7 @@ A family trip shows how the pieces fit together. When I plan the next one, Autod
 
 The central engineering decision was to give each module ownership of its data and make the relevant evidence accessible across modules. A Python and PostgreSQL analytics core tracks 200+ versioned metrics. Specialized agents use stable APIs, Model Context Protocol (MCP) tools, and searchable catalogs to retrieve the context each task needs. They can trace findings back to their sources, revisit earlier conclusions when new evidence appears, and carry my feedback into the next recommendation.
 
-**[Explore a demonstration](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html)** · **[Author’s portfolio](https://github.com/dmitrii-naumenko/portfolio/tree/main/en)** · **[Methodology](methodology.md)**
+**[Explore a demonstration](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html)** · **[Author’s portfolio](https://github.com/dmitrii-naumenko/portfolio/tree/main/en)** · **[Analytics core methodology](methodology.md)**
 
 ![Autodiary activity dashboard](../assets/dashboard_activity.png)
 
@@ -64,7 +64,7 @@ This is an individual system used for personal analytics, learning and planning.
 
 - [Demonstration: from an observation to a decision](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html), using illustrative data. The demonstration interface is in Russian.
 - [Product vision](vision.md).
-- [Methodology](methodology.md).
+- [Analytics core methodology](methodology.md).
 - [Product presentation, March 2026 (PDF, Russian)](../presentation/autodiary_product.pdf), a historical view of the analytics core rather than a description of the full current product.
 
 ## Status

@@ -29,11 +29,11 @@ An evolving personal AI platform that connects what I track, what I learn, and w
 [Read the case](../projects/autodiary/en/README.md) · [Explore the example, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/autodiary.html)
 
 ### AI Software Factory
-**Automating the Development Lifecycle · reusable product in design**
+**Automating the Development Lifecycle · in use and evolving**
 
 [![Factory: goal, plan, implementation, review, verification](../assets/factory.svg)](projects/factory.md)
 
-A reusable system I am designing to coordinate planning, implementation, review, and verification. The factory manages work; an engineering harness provides the execution layer. It builds on my experience creating operational project-specific AI development workflows.
+An AI software factory I am developing to coordinate planning, implementation, review, and verification. The factory manages work; an engineering harness provides the execution layer. It builds on my experience creating operational project-specific AI development workflows.
 
 **Engineering focus:** coding-agent coordination, review and test feedback, repeatable checks, and developer control over consequential decisions.
 
@@ -55,4 +55,4 @@ Clear lessons that combine explanations, visual models, interactive activities, 
 - [ML System Design Challenge 2023](experience/system-design.md): team design of a bank anti-fraud system, with a design document and presentation.
 - **AI News 2023: second place**, technical-expert roles at hackathons, professional certifications, and courses: [selected credentials](../credentials/README.en.md).
 
-Autodiary demo data are synthetic. The Factory walkthrough illustrates a target process rather than a recorded run of the reusable product. Demo interfaces are in Russian.
+Autodiary demo data are synthetic. The Factory walkthrough illustrates the workflow on a fictional task rather than presenting a recorded run. Demo interfaces are in Russian.

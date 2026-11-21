@@ -2,13 +2,13 @@
 
 # AI Software Factory — Automating the Development Lifecycle
 
-**Status: reusable product in design.** Built on experience creating operational project-specific AI workflows.
+**Status: in use and evolving.** The factory is used in project-specific AI workflows; standalone installation in other repositories remains a development direction.
 
 ![Process overview](../../assets/factory.svg)
 
 [Explore the illustrative workflow, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/factory.html)
 
-I’m designing an AI software factory that turns a development goal into a coordinated cycle of planning, implementation, review, and verification. It builds on my experience creating AI development workflows and brings the coordination of that work into a reusable system.
+I’m developing an AI software factory that turns a development goal into a coordinated cycle of planning, implementation, review, and verification. It builds on my experience creating AI development workflows and brings the coordination of that work into a reusable system.
 
 The factory manages how work moves forward—breaking goals into tasks, coordinating coding agents, and feeding review findings and test results back into implementation. The engineering harness provides the execution layer, with project context, isolated workspaces, repeatable checks, and development tools.
 
@@ -25,4 +25,4 @@ Designed to install into existing repositories, the system will adapt to each pr
 
 Project-specific workflows have already used prepared tasks, isolated workspaces, independent review, and pre-delivery checks. The reusable factory consolidates this experience. Installation across repositories, goal decomposition, and portability remain target capabilities.
 
-The walkthrough uses a fictional change request. Review identifies a missing period-boundary check, which leads to a revision and renewed verification. It illustrates the design; it is not a recorded run of a finished reusable product. A successful installation and task run in an independent repository will be a meaningful verification milestone.
+The walkthrough uses a fictional change request. Review identifies a missing period-boundary check, which leads to a revision and renewed verification. It illustrates the workflow on a fictional task rather than presenting a recorded run. A successful installation and task run in an independent repository will be a meaningful verification milestone.
