@@ -39,7 +39,7 @@ An AI software factory I am developing to coordinate planning, implementation, r
 
 **Engineering focus:** coding-agent coordination, review and test feedback, repeatable checks, and developer control over consequential decisions.
 
-[Read the case](projects/factory.md) · [How the factory works, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/factory.html)
+[Read the case](projects/factory.md) · [Step-by-step example, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/factory.html)
 
 ### School Lab
 **From Textbooks to Interactive Learning · biology and olympiad-style mathematics**

@@ -6,6 +6,8 @@
 
 ![AI Software Factory workflow](../../assets/factory.svg)
 
+**[Explore a step-by-step task example, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/factory.html)**
+
 ## Purpose and my contribution
 
 I’m developing an AI software factory that turns a development goal into a coordinated cycle of planning, implementation, review, and verification. It builds on my experience creating AI development workflows and brings the coordination of that work into a reusable system.

@@ -39,7 +39,7 @@
 
 **Инженерный фокус:** координация coding-агентов, обратная связь от review и тестов, воспроизводимые проверки и контроль существенных решений разработчиком.
 
-[Разобрать кейс](projects/factory.md) · [Как работает завод](https://dmitrii-naumenko.github.io/portfolio/demos/factory.html)
+[Разобрать кейс](projects/factory.md) · [Пошаговый пример](https://dmitrii-naumenko.github.io/portfolio/demos/factory.html)
 
 ### School Lab
 **From Textbooks to Interactive Learning · биология и олимпиадная математика**
