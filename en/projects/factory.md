@@ -2,27 +2,31 @@
 
 # AI Software Factory — Automating the Development Lifecycle
 
-**Status: in use and evolving.** The factory is used in project-specific AI workflows; standalone installation in other repositories remains a development direction.
+**In use and evolving.**
 
-![Process overview](../../assets/factory.svg)
+![AI Software Factory workflow](../../assets/factory.svg)
 
-[Explore the illustrative workflow, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/factory.html)
+## Purpose and my contribution
 
 I’m developing an AI software factory that turns a development goal into a coordinated cycle of planning, implementation, review, and verification. It builds on my experience creating AI development workflows and brings the coordination of that work into a reusable system.
 
 The factory manages how work moves forward—breaking goals into tasks, coordinating coding agents, and feeding review findings and test results back into implementation. The engineering harness provides the execution layer, with project context, isolated workspaces, repeatable checks, and development tools.
 
-Designed to install into existing repositories, the system will adapt to each project’s architecture, conventions, and quality standards. The goal is to automate the work between a development request and a verified change, while keeping priorities and consequential decisions under the developer’s control.
+Standalone installation into existing repositories and adaptation to their architecture, conventions, and quality standards remain a development direction. Priorities and consequential decisions stay under the developer’s control.
 
 ## Engineering decisions
 
 - Separate coordination from execution: factory manages work and feedback; harness supplies context, workspaces, checks, and tools.
-- Adapt to an existing repository's architecture and quality standards.
+- Use the project’s own architecture, verification commands, and conventions.
 - Feed review findings and failed checks back into implementation.
 - Keep priorities and consequential decisions under developer control.
 
-## Evidence and current boundary
+## How the factory carries a task forward
 
-Project-specific workflows have already used prepared tasks, isolated workspaces, independent review, and pre-delivery checks. The reusable factory consolidates this experience. Installation across repositories, goal decomposition, and portability remain target capabilities.
+**Organize work around the outcome.** A task retains its goal, boundaries, and acceptance criteria. The agent receives project context and an isolated workspace; execution remains connected to the original request.
 
-The walkthrough uses a fictional change request. Review identifies a missing period-boundary check, which leads to a revision and renewed verification. It illustrates the workflow on a fictional task rather than presenting a recorded run. A successful installation and task run in an independent repository will be a meaningful verification milestone.
+**Turn findings into follow-up work.** Independent review and checks form part of the same cycle. A finding leads to a revision, followed by verification of the updated change.
+
+**Preserve progress across interruptions.** Task state, code changes, and the reason for stopping remain available. Recovery compares the saved state with the actual state of the repository and delivery tools.
+
+**Bring the developer in for consequential decisions.** Priorities, ambiguous requirements, and delivery permissions remain explicit. When human input is needed, the handoff preserves context and a clear next step. This leaves attention available for architecture and the next task while prepared work progresses through its cycle.

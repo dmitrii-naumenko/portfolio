@@ -5,7 +5,7 @@
 
 I design and build AI systems that connect data, tools, and domain knowledge to solve real problems. My focus spans the full path from a user need and system architecture to verification and continued product development.
 
-[LinkedIn](https://www.linkedin.com/in/naumenko-d/) · [Telegram](https://t.me/naumenko_ds) · [Email](mailto:dima-post2009@yandex.com) · [Explore the demos](https://dmitrii-naumenko.github.io/portfolio/)
+[LinkedIn](https://www.linkedin.com/in/naumenko-d/) · [Telegram](https://t.me/naumenko_ds) · [Email](mailto:dima-post2009@yandex.com) · [Explore projects and examples](https://dmitrii-naumenko.github.io/portfolio/)
 
 ## Commercial work I can share publicly
 
@@ -37,14 +37,14 @@ An AI software factory I am developing to coordinate planning, implementation, r
 
 **Engineering focus:** coding-agent coordination, review and test feedback, repeatable checks, and developer control over consequential decisions.
 
-[Read the case](projects/factory.md) · [Walk through the scenario, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/factory.html)
+[Read the case](projects/factory.md) · [How the factory works, in Russian](https://dmitrii-naumenko.github.io/portfolio/demos/factory.html)
 
 ### School Lab
-**From Textbooks to Interactive Learning · offline lessons available**
+**From Textbooks to Interactive Learning · biology and olympiad-style mathematics**
 
 [![School Lab: explanation, model, exploration, self-check](../assets/school.svg)](projects/school.md)
 
-Clear lessons that combine explanations, visual models, interactive activities, and self-checks. Self-contained HTML pages need no installation or account. Try the fractions lab: explore an idea, then test your understanding.
+A substantial, evolving system covering biology and olympiad-style mathematics through courses, lessons, and modules with explanations, visual models, and self-checks. The mathematics direction is developing as a lesson series. The public fractions lab is one selected example; completed pages work offline.
 
 **Engineering focus:** AI-assisted content preparation, independent source review, a shared lesson structure, reusable templates, and automated validation.
 
@@ -55,4 +55,4 @@ Clear lessons that combine explanations, visual models, interactive activities, 
 - [ML System Design Challenge 2023](experience/system-design.md): team design of a bank anti-fraud system, with a design document and presentation.
 - **AI News 2023: second place**, technical-expert roles at hackathons, professional certifications, and courses: [selected credentials](../credentials/README.en.md).
 
-Autodiary demo data are synthetic. The Factory walkthrough illustrates the workflow on a fictional task rather than presenting a recorded run. Demo interfaces are in Russian.
+The Autodiary analytics example uses synthetic data. The public School Lab lesson presents one part of an evolving learning system. Example interfaces are in Russian.
